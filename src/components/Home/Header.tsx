@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Button = ({ children, className, onClick }: any) => (
+const Button = ({ children, className }: { children: React.ReactNode; className?: string }) => (
   <button
     className={`px-6 py-3 rounded-[32px] font-bold text-white transition-colors cursor-pointer duration-200 ${className}`}
   >

@@ -8,6 +8,7 @@ import {
 import Schedule from "./Home/Schedule";
 import Container from "./Container";
 import Link from "next/link";
+import Image from "next/image";
   
   // Footer links data
   interface FooterLinks {
@@ -42,10 +43,12 @@ import Link from "next/link";
               {/* Logo and Contact */}
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
                 <div className="w-[221px] h-10">
-                  <img
+                  <Image
                     className="w-[221px] h-10"
                     alt="Orotecc Logo"
                     src="https://c.animaapp.com/mbw3crr3UaRZYv/img/vector-41.svg"
+                    width={221}
+                    height={40}
                   />
                 </div>
   

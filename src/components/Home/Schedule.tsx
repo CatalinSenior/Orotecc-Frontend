@@ -1,14 +1,17 @@
 import React from 'react'
 import Container from '../Container'
+import Image from "next/image";
 
 const Schedule = () => {
   return (
     <section className='relative'>
         <div className="w-full h-full">
-            <img
-            className="absolute inset-0 w-full h-full object-cover" 
+            <Image
+            className="absolute inset-0 w-full h-full object-cover"
             alt="Background"
             src="https://c.animaapp.com/mbw3crr3UaRZYv/img/rectangle-59.svg"
+            fill
+            sizes="100vw"
             />
         </div>
     <Container className="w-full  flex items-center justify-center py-10 md:py-0 mt-12 lg:mt-24">

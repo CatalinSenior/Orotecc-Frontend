@@ -4,7 +4,6 @@ import Cloud from "@/components/Home/CloudSolution";
 import Hero from "@/components/Home/Hero";
 import Services from "@/components/Home/Services";
 import Testimonial from "@/components/Home/Testimonial";
-import Image from "next/image";
 
 export default function Home() {
   return (

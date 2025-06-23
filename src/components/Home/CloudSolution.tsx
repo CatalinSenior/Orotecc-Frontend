@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../Container";
+import Image from "next/image";
 
 const solutionCards = [
   {
@@ -30,10 +31,12 @@ const Cloud = () => {
   return (
     <section className="py-16 sm:py-16 lg:pt-32 relative ">
       <div className="absolute min-h-[130vh] w-full -top-[15rem] -z-10">
-        <img
-          src="./bg-home.png"
+        <Image
+          src="/bg-home.png"
           alt="Background"
-          className=" inset-0 w-full min-h-[130vh] "
+          fill
+          className="inset-0 w-full min-h-[130vh] object-cover"
+          sizes="100vw"
         />
       </div>
       <Container className="relative z-10">
@@ -53,7 +56,7 @@ const Cloud = () => {
               className="  p-6 flex flex-col items-center text-center "
             >
               {/* Icon above the title */}
-              <img src={card.icon} alt="" className="w-12 h-12 mb-4" />
+              <Image src={card.icon} alt={card.title} width={48} height={48} className="w-12 h-12 mb-4" />
               <h4 className="text-lg sm:text-xl font-medium text-[#010101] mb-2">
                 {card.title}
               </h4>

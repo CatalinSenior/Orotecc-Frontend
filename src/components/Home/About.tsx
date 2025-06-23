@@ -2,9 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 
-interface AboutOroteccSectionProps {}
-
-export const AboutOroteccSection: React.FC<AboutOroteccSectionProps> = () => {
+export const AboutOroteccSection = () => {
   return (
     <Container className="py-16">
       <div className="relative">

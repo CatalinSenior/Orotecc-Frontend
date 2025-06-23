@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react'
 import Container from '../Container'
-import Image from 'next/image';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from "next/image";
 // import ArrowDown from "@arrow-icon.svg"
 
 const serviceCards = [
@@ -96,10 +96,12 @@ const ServiceCard = ({ card }: { card: typeof serviceCards[0] }) => {
         <div
           className={`flex w-12 h-12 items-center justify-center ${card.iconBg} rounded-[30px] mb-4`}
         >
-          <img
+          <Image
             className="w-7 h-7"
             alt={card.title}
             src={card.iconSrc}
+            width={28}
+            height={28}
           />
         </div>
         <div className="flex items-center justify-between">

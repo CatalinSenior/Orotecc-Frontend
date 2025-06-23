@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 export interface FlyoutLinkProps {
   children: React.ReactNode;
   href?: string;
-  FlyoutContent: React.ComponentType<any>;
-  flyoutProps?: any;
+  FlyoutContent: React.ComponentType<Record<string, unknown>>;
+  flyoutProps?: Record<string, unknown>;
   className?: string;
   isOpen?: boolean;
   onOpenChange?: (open: boolean) => void;
@@ -23,12 +23,12 @@ const FlyoutLink: React.FC<FlyoutLinkProps> = ({
 }) => {
   const [internalOpen, setInternalOpen] = useState(false);
   const open = typeof isOpen === "boolean" ? isOpen : internalOpen;
-  const ref = useRef<HTMLDivElement>(null);
+  const linkRef = useRef<HTMLDivElement>(null);
   const showFlyout = !!FlyoutContent && open;
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
+      if (linkRef.current && !linkRef.current.contains(event.target as Node)) {
         if (onOpenChange) onOpenChange(false);
         else setInternalOpen(false);
       }
@@ -42,7 +42,7 @@ const FlyoutLink: React.FC<FlyoutLinkProps> = ({
   }, [open, onOpenChange]);
 
   return (
-    <div ref={ref} className="relative w-fit h-fit">
+    <div ref={linkRef} className="relative w-fit h-fit">
       <a
         href={href}
         className={`relative text-white no-underline cursor-pointer ${className || ""}`}

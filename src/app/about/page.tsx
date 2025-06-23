@@ -1,6 +1,6 @@
-import { RefreshCwIcon } from "lucide-react";
 import Testimonial from "@/components/Home/Testimonial";
 import Container from "@/components/Container";
+import Image from "next/image";
 
 const whyChooseUsData = [
   {
@@ -73,7 +73,7 @@ const About = () => {
       <div className="bg-white overflow-hidden w-full relative">
         {/* Hero Section */}
         <section className="w-full h-[520px] mt-[72px] relative">
-          <img src="./Group_6.png" className="w-full h-full" />
+          <Image src="/Group_6.png" alt="Group 6 background" fill className="w-full h-full object-cover" />
 
           <Container className="absolute max-w-[707px] top-[154px] font-semibold text-white text-5xl tracking-[0] leading-[64.8px]">
             Powering Secure &amp; Scalable Cloud Solutions
@@ -107,10 +107,12 @@ const About = () => {
 
         {/* Why Choose Us Section */}
         <section className="mt-[60px] relative">
-          <img
-            className="w-3xl h-[1363px]"
+          <Image
+            className="w-3xl h-[1363px] object-cover"
             alt="Background decoration"
             src="https://c.animaapp.com/mbw3uj4lEyyNHb/img/rectangle-33.svg"
+            width={1200}
+            height={1363}
           />
 
           <div className="absolute top-[488px] left-1/2 transform -translate-x-1/2 font-bold text-[#764af1] text-xl text-center tracking-[1.60px] leading-[30px]">
@@ -180,9 +182,11 @@ const About = () => {
                 className="w-[459px] h-[668px] rounded-xl border-8 border-solid border-[#f3f3f3] bg-white flex flex-col p-[30px] gap-6"
               >
                 <div className="w-[399px] h-[520px] bg-[#d9d9d9] rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     src={member.imageSrc}
                     alt={member.name}
+                    width={399}
+                    height={520}
                     className="w-full h-full object-cover"
                   />
                 </div>

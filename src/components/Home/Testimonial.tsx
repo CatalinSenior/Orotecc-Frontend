@@ -25,14 +25,6 @@ const Avatar: React.FC<AvatarProps> = ({ className = "", children }) => (
   </div>
 );
 
-type SeparatorProps = { className?: string };
-const Separator: React.FC<SeparatorProps> = ({ className = "" }) => (
-  <div
-    className={`shrink-0 bg-border ${className}`}
-    style={{ height: "1px" }}
-  />
-);
-
 const Testimonial = () => {
   // Testimonials data
   const testimonials = [
