@@ -29,7 +29,7 @@ export const AboutOroteccSection = () => {
             At Orotecc, we specialize in cutting-edge cloud solutions that drive
             business growth and innovation. With a team of certified experts, we
             help businesses harness the power of cloud computing, ensuring
-            security, scalability, and efficiency. Whether it's cloud migration,
+            security, scalability, and efficiency. Whether it&apos;s cloud migration,
             DevOps, AI-driven analytics, or multi-cloud management, we provide
             tailored solutions to meet your needs. Empower your business with
             seamless cloud transformation.
