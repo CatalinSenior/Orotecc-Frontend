@@ -24,11 +24,11 @@ interface NavLink {
 
 const navLinksData: NavLink[] = [
   { name: "Home", hasDropdown: false, path: "/" },
-  { name: "Services", hasDropdown: true, path: "/services" },
-  { name: "Solutions", hasDropdown: true, path: "/solutions" },
   { name: "About", hasDropdown: false, path: "/about" },
-  { name: "Resources", hasDropdown: true, path: "/resources" },
+  { name: "Services", hasDropdown: true, path: "/services" },
   { name: "Contact", hasDropdown: false, path: "/contact" },
+  // { name: "Solutions", hasDropdown: true, path: "/solutions" },
+  // { name: "Resources", hasDropdown: true, path: "/resources" },
 ];
 
 const services = [
@@ -74,31 +74,31 @@ const services = [
   },
 ];
 
-const solutions = [
-  {
-    title: "Media Crowd",
-    description: "Media monitoring with an AI-powered state-of-the-art solution",
-    icon: "/solutions/media.svg",
-  },
-  {
-    title: "Cloud Security",
-    description: "Advanced protection to secure your data",
-    icon: "/solutions/security.svg",
-  },
-];
+// const solutions = [
+//   {
+//     title: "Media Crowd",
+//     description: "Media monitoring with an AI-powered state-of-the-art solution",
+//     icon: "/solutions/media.svg",
+//   },
+//   {
+//     title: "Cloud Security",
+//     description: "Advanced protection to secure your data",
+//     icon: "/solutions/security.svg",
+//   },
+// ];
 
-const resources = [
-  {
-    title: "Blogs",
-    description: "Insights, updates, and best practices from our experts",
-    icon: "/resources/blogs.svg",
-  },
-  {
-    title: "Security",
-    description: "Guides and resources to keep your data safe",
-    icon: "/resources/security.svg",
-  },
-];
+// const resources = [
+//   {
+//     title: "Blogs",
+//     description: "Insights, updates, and best practices from our experts",
+//     icon: "/resources/blogs.svg",
+//   },
+//   {
+//     title: "Security",
+//     description: "Guides and resources to keep your data safe",
+//     icon: "/resources/security.svg",
+//   },
+// ];
 
 const ServicesFlyout = () => (
   <div className="p-4 min-w-[680px] bg-white rounded-xl shadow-xl">
@@ -118,41 +118,41 @@ const ServicesFlyout = () => (
   </div>
 );
 
-const SolutionsFlyout = () => (
-  <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
-    <div className="grid grid-cols-1 gap-2">
-      {solutions.map((solution, idx) => (
-        <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
-          <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
-            <Image src={solution.icon} alt={solution.title + ' icon'} width={18} height={18} />
-          </div>
-          <div>
-            <div className="font-semibold text-[#3b3f48] text-base leading-tight">{solution.title}</div>
-            <div className="text-sm text-[#686e7b] mt-1 leading-snug">{solution.description}</div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+// const SolutionsFlyout = () => (
+//   <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
+//     <div className="grid grid-cols-1 gap-2">
+//       {solutions.map((solution, idx) => (
+//         <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
+//           <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
+//             <Image src={solution.icon} alt={solution.title + ' icon'} width={18} height={18} />
+//           </div>
+//           <div>
+//             <div className="font-semibold text-[#3b3f48] text-base leading-tight">{solution.title}</div>
+//             <div className="text-sm text-[#686e7b] mt-1 leading-snug">{solution.description}</div>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// );
 
-const ResourcesFlyout = () => (
-  <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
-    <div className="grid grid-cols-1 gap-2">
-      {resources.map((resource, idx) => (
-        <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
-          <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
-            <Image src={resource.icon} alt={resource.title + ' icon'} width={18} height={18} />
-          </div>
-          <div>
-            <div className="font-semibold text-[#3b3f48] text-base leading-tight">{resource.title}</div>
-            <div className="text-sm text-[#686e7b] mt-1 leading-snug">{resource.description}</div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+// const ResourcesFlyout = () => (
+//   <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
+//     <div className="grid grid-cols-1 gap-2">
+//       {resources.map((resource, idx) => (
+//         <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
+//           <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
+//             <Image src={resource.icon} alt={resource.title + ' icon'} width={18} height={18} />
+//           </div>
+//           <div>
+//             <div className="font-semibold text-[#3b3f48] text-base leading-tight">{resource.title}</div>
+//             <div className="text-sm text-[#686e7b] mt-1 leading-snug">{resource.description}</div>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// );
 
 export const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -185,7 +185,7 @@ export const Header = () => {
         <Image src="/icons/Logo.svg" alt="Logo" width={200} height={40} />
       </div>
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex items-center justify-center gap-4 2xl:gap-6 relative flex-1 grow">
+      <div className="hidden lg:flex items-center justify-center gap-6 relative flex-1 grow">
         {navLinksData.map((link, index) => (
           <div
             key={index}
@@ -197,10 +197,10 @@ export const Header = () => {
                 FlyoutContent={
                   link.name === "Services"
                     ? ServicesFlyout
-                    : link.name === "Solutions"
-                    ? SolutionsFlyout
-                    : link.name === "Resources"
-                    ? ResourcesFlyout
+                    // : link.name === "Solutions"
+                    // ? SolutionsFlyout
+                    // : link.name === "Resources"
+                    // ? ResourcesFlyout
                     : () => <div>No Content</div>
                 }
                 className={`relative after:absolute after:bottom-[-3px] after:right-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 dark:after:bg-white after:bg-[#764AF1] after:transition-transform after:duration-1000 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 flex gap-1 items-center${openDropdown === link.name || pathname === link.path ? " after:scale-x-100" : ""}`}
@@ -223,7 +223,7 @@ export const Header = () => {
         ))}
       </div>
       <div className="hidden lg:flex flex-col items-end justify-center">
-        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform hover:scale-95 origin-left hover:origin-right delay-150">Get Started</Button>
+        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform hover:scale-9 origin-left hover:origin-right delay-150">Free Consultation</Button>
       </div>
 
       {/* Hamburger for mobile */}
@@ -298,8 +298,8 @@ export const Header = () => {
                             >
                               <div className="py-2">
                                 {link.name === "Services" && <ServicesFlyout />}
-                                {link.name === "Solutions" && <SolutionsFlyout />}
-                                {link.name === "Resources" && <ResourcesFlyout />}
+                                {/* {link.name === "Solutions" && <SolutionsFlyout />}
+                                {link.name === "Resources" && <ResourcesFlyout />} */}
                               </div>
                             </motion.div>
                           )}
@@ -319,7 +319,7 @@ export const Header = () => {
               </nav>
               {/* Get Started button at bottom */}
               <div className="mt-auto pt-8">
-                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left">Get Started</Button>
+                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left">Free Consultation</Button>
               </div>
             </motion.div>
           </motion.div>

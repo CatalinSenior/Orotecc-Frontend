@@ -5,11 +5,11 @@ import Image from "next/image";
 const Schedule = () => {
   return (
     <section className='relative'>
-        <div className="w-full h-full">
+        <div className="absolute top-10 inset-0 w-full h-full">
             <Image
-            className="absolute inset-0 w-full h-full object-cover"
+            className=""
             alt="Background"
-            src="https://c.animaapp.com/mbw3crr3UaRZYv/img/rectangle-59.svg"
+            src="/triangle.png"
             fill
             sizes="100vw"
             />

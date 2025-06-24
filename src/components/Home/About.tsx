@@ -9,7 +9,7 @@ export const AboutOroteccSection = () => {
         {/* Image container */}
         <div className="lg:w-[800px]">
             <Image
-                src="/image-landing.png"
+                src="/about.png"
                 width={800}
                 height={600}
                 className="w-full h-auto object-cover rounded-xl"

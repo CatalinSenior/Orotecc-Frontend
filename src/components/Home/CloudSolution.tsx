@@ -35,7 +35,7 @@ const Cloud = () => {
           src="/bg-home.png"
           alt="Background"
           fill
-          className="inset-0 w-full min-h-[130vh] object-cover"
+          className="inset-0 w-full min-h-[130vh]"
           sizes="100vw"
         />
       </div>
