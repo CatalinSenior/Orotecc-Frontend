@@ -21,7 +21,7 @@ const Schedule = () => {
       <div className="flex flex-col items-center gap-5 w-full max-w-3xl">
         {/* Headline */}
         <div className="flex flex-col items-center gap-2 w-full">
-          <div className="font-bold text-white text-base sm:text-xl tracking-[0.08em] sm:tracking-[1.60px] leading-[1.5] sm:leading-[30px] whitespace-nowrap uppercase">
+          <div className="font-bold text-white text-base sm:text-xl tracking-[0.08em] sm:tracking-[1.60px] leading-[1.5] sm:leading-[30px] uppercase">
             TRANSFORM YOUR CLOUD INFRASTRUCTURE
           </div>
           <div className="font-semibold text-white text-3xl md:text-4xl 2xl:text-5xl leading-[1.2] md:leading-[64.8px]">

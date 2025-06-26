@@ -1,10 +1,4 @@
-import {
-    FacebookIcon,
-    LinkedinIcon,
-    YoutubeIcon,
-    PhoneIcon,
-    MailIcon,
-  } from "lucide-react";
+
 import Schedule from "./Home/Schedule";
 import Container from "./Container";
 import Link from "next/link";
@@ -18,7 +12,9 @@ import Image from "next/image";
     resources: string[];
   }
   const footerLinks: FooterLinks = {
-    company: ["Home", "About", "Team", "Testimonials", "Careers", "Contact"],
+    company: ["Home", "About", 
+      // "Team", "Testimonials", "Careers", 
+      "Contact"],
     services: [
       "Cloud Infrastructure",
       "Cloud Security",
@@ -29,7 +25,20 @@ import Image from "next/image";
       "Cloud Apps",
       "Multi-Cloud Solutions",
     ],
-    resources: ["Blog", "News and Events", "Support", "FAQ", "Sitemap"],
+    resources: [
+      // "Blog", "News and Events", "Support", "FAQ", 
+      "Sitemap"],
+  };
+  
+  const serviceLinkMap: { [key: string]: string } = {
+    "Cloud Infrastructure": "/services/cloud-infrastructure",
+    "Cloud Security": "/services/cloud-security",
+    "AWS Solutions": "/services/aws-solutions",
+    "DevOps & Automation": "/services/devops-automation",
+    "Data Analytics & AI": "/services/data-analytics-ai",
+    "Managed Cloud": "/services/managed-cloud",
+    "Cloud Apps": "/services/cloud-apps",
+    "Multi-Cloud Solutions": "/services/multi-cloud-solutions",
   };
   
   export const Footer = () => {
@@ -52,15 +61,22 @@ import Image from "next/image";
                   />
                 </div>
   
-                <div className="flex items-center gap-3 mt-8 md:mt-12">
-                  <PhoneIcon className="w-[18px] h-[18px] text-white" />
+                <div className="flex gap-3 mt-8 md:mt-12">
+                  <Image src="/map-pin.svg" alt="Address" width={18} height={18} className="w-[18px] h-[18px]" />
+                  <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
+                    Al Manama Tower, Office 2313, Business Bay, Dubai
+                  </span>
+                </div>
+  
+                <div className="flex gap-3 mt-4">
+                  <Image src="/phone-call.svg" alt="Phone" width={18} height={18} className="w-[18px] h-[18px]" />
                   <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
                     +971 556677555
                   </span>
                 </div>
   
-                <div className="flex items-center gap-3 mt-4">
-                  <MailIcon className="w-[18px] h-[18px] text-white" />
+                <div className="flex gap-3 mt-4">
+                  <Image src="/mail.svg" alt="Mail" width={18} height={18} className="w-[18px] h-[18px]" />
                   <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
                     info@orotecc.com
                   </span>
@@ -72,13 +88,13 @@ import Image from "next/image";
   
                 <div className="flex gap-3 mt-4">
                   <div className="w-9 h-9 bg-[#764af1] rounded-full flex items-center justify-center transition-colors hover:bg-purple-700">
-                    <FacebookIcon className="w-6 h-6 text-white" />
+                    <Image src="/facebook.png" alt="Facebook" width={24} height={24} className="w-6 h-6" />
                   </div>
                   <div className="w-9 h-9 bg-[#764af1] rounded-full flex items-center justify-center transition-colors hover:bg-purple-700">
-                    <YoutubeIcon className="w-6 h-6 text-white" />
+                    <Image src="/youtube.png" alt="YouTube" width={24} height={24} className="w-6 h-6" />
                   </div>
                   <div className="w-9 h-9 bg-[#764af1] rounded-full flex items-center justify-center transition-colors hover:bg-purple-700">
-                    <LinkedinIcon className="w-6 h-6 text-white" />
+                    <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} className="w-6 h-6" />
                   </div>
                 </div>
               </div>
@@ -95,7 +111,7 @@ import Image from "next/image";
                     {footerLinks[category].map((link: string, linkIndex: number) => (
                       <div key={linkIndex} className="">
                         <Link
-                          href="#"
+                          href={category === "services" ? serviceLinkMap[link] : "#"}
                           className="inline-block opacity-80 font-normal text-white text-base tracking-[0] leading-[21.6px] hover:opacity-100 transition-colors relative after:absolute after:bottom-[-3px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-[#764AF1] after:transition-transform after:duration-700 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
                         >
                           {link}

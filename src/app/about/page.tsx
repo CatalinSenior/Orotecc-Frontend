@@ -1,5 +1,5 @@
 import Testimonial from "@/components/Home/Testimonial";
-import AboutHero from "@/components/About/Hero";
+import Hero from "@/components/Hero";
 import WhoWeAre from "@/components/About/WhoWeAre";
 import WhyChooseUs from "@/components/About/WhyChooseUs";
 import MeetOurTeam from "@/components/About/MeetOurTeam";
@@ -10,25 +10,21 @@ const whyChooseUsData = [
     description:
       "Enterprise-grade security measures, ensuring 99.99% uptime and data protection",
     icon: "/cloud.svg",
-
   },
   {
     title: "Cloud Expertise",
     description: "Certified cloud professionals, years of experience",
     icon: "/icons/enhance.svg",
-
   },
   {
     title: "Scalability",
     description: "Flexible solutions designed for all businesses of all sizes",
     icon: "/icons/speedometer.svg",
-
   },
   {
     title: "24/7 Support",
     description: "Dedicated 24/7 expert cloud assistance anytime",
     icon: "/icons/idea.svg",
-
   },
 ];
 
@@ -80,11 +76,17 @@ const teamMembers = [
 const About = () => {
   return (
     <main className=" w-full">
-        <AboutHero />
-        <WhoWeAre />
-        <WhyChooseUs whyChooseUsData={whyChooseUsData} />
-        <MeetOurTeam teamMembers={teamMembers} />
-        <Testimonial />
+      <Hero
+        title="Powering Secure & Scalable Cloud Solutions"
+        subtitle="Driving innovation, security, and efficiency through cutting-edge cloud technology"
+        bannerImage="/about-banner.png"
+        bannerAlt="about banner"
+        bannerImageClassName="right-0 top-0 w-[60%] h-full"
+      />
+      <WhoWeAre />
+      <WhyChooseUs whyChooseUsData={whyChooseUsData} />
+      <MeetOurTeam teamMembers={teamMembers} />
+      <Testimonial />
     </main>
   );
 };

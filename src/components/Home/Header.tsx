@@ -36,41 +36,49 @@ const services = [
     title: "Cloud Infrastructure",
     description: "Scalable and reliable cloud computing solutions",
     icon: "/services/infrastructure.svg",
+    href: "/services/cloud-infrastructure",
   },
   {
     title: "Cloud Security",
     description: "Advanced protection to secure your data",
     icon: "/services/security.svg",
+    href: "/services/cloud-security",
   },
   {
     title: "AWS Solutions",
     description: "Expert AWS consulting, migration, and optimization",
     icon: "/services/solutions.svg",
+    href: "/services/aws-solutions",
   },
   {
     title: "DevOps & Automation",
     description: "Efficient CI/CD pipelines and automated workflows",
     icon: "/services/devops.svg",
+    href: "/services/devops-automation",
   },
   {
     title: "Data Analytics & AI",
     description: "AI-driven insights for smarter business decisions",
     icon: "/services/data.svg",
+    href: "/services/data-analytics-ai",
   },
   {
     title: "Managed Cloud",
     description: "24/7 cloud monitoring, maintenance, and support",
     icon: "/services/managed.svg",
+    href: "/services/managed-cloud",
   },
   {
     title: "Cloud Apps",
     description: "Custom cloud apps for performance and scalability",
     icon: "/services/apps.svg",
+    href: "/services/cloud-apps",
   },
   {
     title: "Multi-Cloud Solutions",
     description: "Flexible cloud strategies for seamless integration",
     icon: "/services/multi.svg",
+    href: "/services/multi-cloud-solutions",
   },
 ];
 
@@ -104,7 +112,7 @@ const ServicesFlyout = () => (
   <div className="p-4 min-w-[680px] bg-white rounded-xl shadow-xl">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
       {services.map((service, idx) => (
-        <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
+        <Link key={idx} href={service.href} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
           <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
             <Image src={service.icon} alt={service.title + ' icon'} width={18} height={18} />
           </div>
@@ -112,7 +120,7 @@ const ServicesFlyout = () => (
             <div className="font-semibold text-[#3b3f48] text-base leading-tight">{service.title}</div>
             <div className="text-sm text-[#686e7b] mt-1 leading-snug">{service.description}</div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   </div>
@@ -181,9 +189,9 @@ export const Header = () => {
   return (
     <header className="flex w-full h-[72px] items-center justify-between px-4 md:px-8 py-4 fixed top-0 left-0 shadow-[0px_1px_1px_#00000014] z-100 bg-white">
       {/* Logo Section */}
-      <div className="flex items-center gap-[3px]">
+      <Link href={"/"} className="flex items-center gap-[3px]">
         <Image src="/icons/Logo.svg" alt="Logo" width={200} height={40} />
-      </div>
+      </Link>
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center justify-center gap-6 relative flex-1 grow">
         {navLinksData.map((link, index) => (
@@ -223,8 +231,9 @@ export const Header = () => {
         ))}
       </div>
       <div className="hidden lg:flex flex-col items-end justify-center">
-        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform hover:scale-9 origin-left hover:origin-right delay-150">Free Consultation</Button>
+        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform origin-left hover:origin-right delay-150">Free Consultation</Button>
       </div>
+      
 
       {/* Hamburger for mobile */}
       <button

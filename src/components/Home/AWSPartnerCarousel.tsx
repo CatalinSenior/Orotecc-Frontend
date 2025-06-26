@@ -24,7 +24,7 @@ const partnerBadges: PartnerBadge[] = [
 
 export const AWSPartnerCarousel: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, align: 'start', duration: 50 },
+    { loop: true, align: 'start', containScroll: 'trimSnaps', duration: 50 },
     [Autoplay({ delay: 4000 })]
   );
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -54,16 +54,19 @@ export const AWSPartnerCarousel: React.FC = () => {
   return (
     <section className="relative py-12">
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-8" style={{ marginLeft: '-1rem' }}>
+        <div className="flex ">
           {partnerBadges.map((badge) => (
-            <div className="flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 pl-4" key={badge.id}>
-                <div className="relative w-full h-[160px] flex flex-col items-center justify-center">
+            <div
+              className="flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 px-4 md:px-6 lg:px-8"
+              key={badge.id}
+            >
+                <div className="relative w-full h-[160px] 2xl:h-[176px] flex flex-col items-center justify-center">
                     <Image
                         src={badge.src}
                         alt={badge.alt}
                         width={176}
                         height={176}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contai"
                     />
                 </div>
             </div>
