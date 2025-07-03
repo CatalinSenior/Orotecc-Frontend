@@ -230,9 +230,9 @@ export const Header = () => {
           </div>
         ))}
       </div>
-      <div className="hidden lg:flex flex-col items-end justify-center">
+      <Link href={"/free-consultation"} className="hidden lg:flex flex-col items-end justify-center">
         <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform origin-left hover:origin-right delay-150">Free Consultation</Button>
-      </div>
+      </Link>
       
 
       {/* Hamburger for mobile */}
@@ -327,9 +327,9 @@ export const Header = () => {
                 ))}
               </nav>
               {/* Get Started button at bottom */}
-              <div className="mt-auto pt-8">
-                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left">Free Consultation</Button>
-              </div>
+              <Link href={"/free-consultation"} className="mt-auto pt-8">
+                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left ">Free Consultation</Button>
+              </Link>
             </motion.div>
           </motion.div>
         )}

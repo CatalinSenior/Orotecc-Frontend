@@ -57,7 +57,7 @@ export default function DataAnalyticsAIPage() {
         bannerImage="/Layer_1.png"
 
         bannerAlt="Data Analytics & AI Banner"
-        bannerImageClassName="right-30 top-0 w-fit scale-[75%] h-full"
+        bannerImageClassName="right-30 2xl:right-50 top-0 w-fit scale-[75%] 2xl:scale-[85%] h-full"
 
       />
 

@@ -57,7 +57,7 @@ export default function MultiCloudSolutionsPage() {
         bannerImage="/Layer_1.png"
 
         bannerAlt="Multi-Cloud Solutions Banner"
-        bannerImageClassName="right-35 top-0 w-fit scale-[75%] h-full"
+        bannerImageClassName="right-30 2xl:right-50 top-0 w-fit scale-[75%] 2xl:scale-[85%] h-full"
 
       />
 

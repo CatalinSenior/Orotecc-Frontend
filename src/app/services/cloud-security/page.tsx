@@ -56,7 +56,7 @@ export default function CloudSecurityPage() {
         subtitle="Advanced security strategies for a cloud-first world"
         bannerImage="/Layer_1.png"
         bannerAlt="Cloud Security Banner"
-        bannerImageClassName="right-30 top-0 w-fit scale-[75%] h-full"
+        bannerImageClassName="right-30 2xl:right-50 top-0 w-fit scale-[75%] 2xl:scale-[85%] h-full"
       />
 
       {/* What is Cloud Security */}

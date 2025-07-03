@@ -1,8 +1,9 @@
-
+"use client"
 import Schedule from "./Home/Schedule";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
   
   // Footer links data
   interface FooterLinks {
@@ -41,10 +42,17 @@ import Image from "next/image";
     "Multi-Cloud Solutions": "/services/multi-cloud-solutions",
   };
   
+  const companyLinkMap: { [key: string]: string } = {
+    Home: '/',
+    About: '/about',
+    Contact: '/contact',
+  };
+  
   export const Footer = () => {
+    const pathname = usePathname();
     return (
       <div className="relative overflow-hidden">
-            <Schedule />
+        {pathname !== "/free-consultation" && <Schedule />}
 
         <footer className="w-full bg-[#121d4e] relative pt-[4rem]  lg:pt-[8rem]">
           <Container className="">
@@ -111,7 +119,13 @@ import Image from "next/image";
                     {footerLinks[category].map((link: string, linkIndex: number) => (
                       <div key={linkIndex} className="">
                         <Link
-                          href={category === "services" ? serviceLinkMap[link] : "#"}
+                          href={
+                            category === "services"
+                              ? serviceLinkMap[link]
+                              : category === "company"
+                              ? companyLinkMap[link] || "#"
+                              : "#"
+                          }
                           className="inline-block opacity-80 font-normal text-white text-base tracking-[0] leading-[21.6px] hover:opacity-100 transition-colors relative after:absolute after:bottom-[-3px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-[#764AF1] after:transition-transform after:duration-700 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
                         >
                           {link}
