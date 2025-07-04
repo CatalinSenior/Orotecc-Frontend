@@ -3,8 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "../Container";
+import { useTranslations } from 'next-intl';
 
 const Hero: React.FC = () => {
+  const t = useTranslations('Home');
+
   return (
     <div className="relative w-full overflow-hidden pt-[72px]">
       <Image
@@ -18,13 +21,13 @@ const Hero: React.FC = () => {
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col items-start text-cente 2xl:pt-12">
           <h1 className="text-4xl lg:text-[46px] xl:text-[54px] font-semibold text-white mb-6 leading-tight">
-            Empowering Your<br />Cloud Infrastructure
+            {t('heroTitle')}
           </h1>
           <p className="text-lg md:text-2xl text-white/90 mb-8 max-w-2xl">
-            Secure, Scalable, and Reliable Cloud Solutions<br className="hidden md:block" /> Tailored for Your Business
+            {t('heroSubtitle')}
           </p>
           <button className="bg-[#010101] text-white rounded-[32px] px-6 py-4 hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
-            Get Started
+            {t('getStarted')}
           </button>
         </div>
 

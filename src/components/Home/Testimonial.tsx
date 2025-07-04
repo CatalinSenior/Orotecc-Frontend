@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Container from "../Container";
 // import Quote from "/icons/quote.svg"
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 
 type AvatarProps = { className?: string; children?: React.ReactNode };
@@ -26,34 +28,30 @@ const Avatar: React.FC<AvatarProps> = ({ className = "", children }) => (
 );
 
 const Testimonial = () => {
-  // Testimonials data
+  const t = useTranslations('Testimonial');
   const testimonials = [
     {
-      quote:
-        "Orotecc has completely transformed our cloud infrastructure. Their expertise in AWS and DevOps helped us scale seamlessly while maintaining top-notch security.",
-      name: "John Smith",
-      position: "CTO at TechCorp",
+      quote: t('quote1'),
+      name: t('name1'),
+      position: t('position1'),
       rating: 5,
     },
     {
-      quote:
-        "Partnering with Orotecc was one of the best decisions for our business. Their cloud security solutions ensured our sensitive customer data remained protected.",
-      name: "Sarah Johnson",
-      position: "CEO of RetailFlow",
+      quote: t('quote2'),
+      name: t('name2'),
+      position: t('position2'),
       rating: 5,
     },
     {
-      quote:
-        "We needed a reliable cloud partner, and Orotecc delivered beyond expectations. From migration to ongoing management, they handled everything with precision and efficiency.",
-      name: "Michael Lee",
-      position: "Head of IT at FinTrust",
+      quote: t('quote3'),
+      name: t('name3'),
+      position: t('position3'),
       rating: 5,
     },
     {
-      quote:
-        "Orotecc provided us with a scalable multi-cloud solution that revolutionized how we manage student data and online learning platforms.",
-      name: "Emily Carter",
-      position: "Director at EduCloud",
+      quote: t('quote4'),
+      name: t('name4'),
+      position: t('position4'),
       rating: 5,
     },
   ];
@@ -84,16 +82,16 @@ const Testimonial = () => {
           {/* Added right padding for spacing from grid */}
           <div className="mb-8">
             <h2 className="text-[#764af1] text-lg font-bold tracking-wide uppercase mb-4">
-              WHAT OUR CLIENTS SAY
+              {t('title')}
             </h2>
             <h3 className="text-3xl md:text-4xl 2xl:text-5xl font-semibold text-[#3b3f48] leading-tight">
-              Trusted by Businesses – See How Orotecc Delivers Excellence
+              {t('heading')}
             </h3>
           </div>
           <div className="mb-12">
             <div className="inline-flex flex-col items-start gap-2">
               <span className="font-bold text-[#3b3f48] text-lg relative after:absolute after:bottom-[-3px] after:right-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 after:bg-[#764AF1] after:transition-transform after:duration-700 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:scale-x-0 hover:text-[#764AF1] transition-colors duration-300 ease-in-out cursor-pointer">
-                More Testimonials
+                {t('more')}
               </span>
             </div>
           </div>

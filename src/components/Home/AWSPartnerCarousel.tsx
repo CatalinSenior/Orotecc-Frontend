@@ -57,7 +57,7 @@ export const AWSPartnerCarousel: React.FC = () => {
         <div className="flex ">
           {partnerBadges.map((badge) => (
             <div
-              className="flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 px-4 md:px-6 lg:px-8"
+              className="flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 2xl:w-1/6 px-4 md:px-6 lg:px-8"
               key={badge.id}
             >
                 <div className="relative w-full h-[160px] 2xl:h-[176px] flex flex-col items-center justify-center">

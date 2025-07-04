@@ -7,6 +7,7 @@ import FlyoutLink from "./FlyoutLinks";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 const Button = ({ children, className }: { children: React.ReactNode; className?: string }) => (
   <button
@@ -22,109 +23,76 @@ interface NavLink {
   path: string;
 }
 
-const navLinksData: NavLink[] = [
-  { name: "Home", hasDropdown: false, path: "/" },
-  { name: "About", hasDropdown: false, path: "/about" },
-  { name: "Services", hasDropdown: true, path: "/services" },
-  { name: "Contact", hasDropdown: false, path: "/contact" },
-  // { name: "Solutions", hasDropdown: true, path: "/solutions" },
-  // { name: "Resources", hasDropdown: true, path: "/resources" },
-];
-
-const services = [
-  {
-    title: "Cloud Infrastructure",
-    description: "Scalable and reliable cloud computing solutions",
-    icon: "/services/infrastructure.svg",
-    href: "/services/cloud-infrastructure",
-  },
-  {
-    title: "Cloud Security",
-    description: "Advanced protection to secure your data",
-    icon: "/services/security.svg",
-    href: "/services/cloud-security",
-  },
-  {
-    title: "AWS Solutions",
-    description: "Expert AWS consulting, migration, and optimization",
-    icon: "/services/solutions.svg",
-    href: "/services/aws-solutions",
-  },
-  {
-    title: "DevOps & Automation",
-    description: "Efficient CI/CD pipelines and automated workflows",
-    icon: "/services/devops.svg",
-    href: "/services/devops-automation",
-  },
-  {
-    title: "Data Analytics & AI",
-    description: "AI-driven insights for smarter business decisions",
-    icon: "/services/data.svg",
-    href: "/services/data-analytics-ai",
-  },
-  {
-    title: "Managed Cloud",
-    description: "24/7 cloud monitoring, maintenance, and support",
-    icon: "/services/managed.svg",
-    href: "/services/managed-cloud",
-  },
-  {
-    title: "Cloud Apps",
-    description: "Custom cloud apps for performance and scalability",
-    icon: "/services/apps.svg",
-    href: "/services/cloud-apps",
-  },
-  {
-    title: "Multi-Cloud Solutions",
-    description: "Flexible cloud strategies for seamless integration",
-    icon: "/services/multi.svg",
-    href: "/services/multi-cloud-solutions",
-  },
-];
-
-// const solutions = [
-//   {
-//     title: "Media Crowd",
-//     description: "Media monitoring with an AI-powered state-of-the-art solution",
-//     icon: "/solutions/media.svg",
-//   },
-//   {
-//     title: "Cloud Security",
-//     description: "Advanced protection to secure your data",
-//     icon: "/solutions/security.svg",
-//   },
-// ];
-
-// const resources = [
-//   {
-//     title: "Blogs",
-//     description: "Insights, updates, and best practices from our experts",
-//     icon: "/resources/blogs.svg",
-//   },
-//   {
-//     title: "Security",
-//     description: "Guides and resources to keep your data safe",
-//     icon: "/resources/security.svg",
-//   },
-// ];
-
-const ServicesFlyout = () => (
-  <div className="p-4 min-w-[680px] bg-white rounded-xl shadow-xl">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
-      {services.map((service, idx) => (
-        <Link key={idx} href={service.href} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
-          <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
-            <Image src={service.icon} alt={service.title + ' icon'} width={18} height={18} />
-          </div>
-          <div>
-            <div className="font-semibold text-[#3b3f48] text-base leading-tight">{service.title}</div>
-            <div className="text-sm text-[#686e7b] mt-1 leading-snug">{service.description}</div>
-          </div>
-        </Link>
-      ))}
+function ServicesFlyout() {
+  const tServices = useTranslations('Header.Services');
+  const services = [
+    {
+      title: tServices('CloudInfrastructure.title'),
+      description: tServices('CloudInfrastructure.description'),
+      icon: '/services/infrastructure.svg',
+      href: '/services/cloud-infrastructure',
+    },
+    {
+      title: tServices('CloudSecurity.title'),
+      description: tServices('CloudSecurity.description'),
+      icon: '/services/security.svg',
+      href: '/services/cloud-security',
+    },
+    {
+      title: tServices('AWSSolutions.title'),
+      description: tServices('AWSSolutions.description'),
+      icon: '/services/solutions.svg',
+      href: '/services/aws-solutions',
+    },
+    {
+      title: tServices('DevOpsAutomation.title'),
+      description: tServices('DevOpsAutomation.description'),
+      icon: '/services/devops.svg',
+      href: '/services/devops-automation',
+    },
+    {
+      title: tServices('DataAnalyticsAI.title'),
+      description: tServices('DataAnalyticsAI.description'),
+      icon: '/services/data.svg',
+      href: '/services/data-analytics-ai',
+    },
+    {
+      title: tServices('ManagedCloud.title'),
+      description: tServices('ManagedCloud.description'),
+      icon: '/services/managed.svg',
+      href: '/services/managed-cloud',
+    },
+    {
+      title: tServices('CloudApps.title'),
+      description: tServices('CloudApps.description'),
+      icon: '/services/apps.svg',
+      href: '/services/cloud-apps',
+    },
+    {
+      title: tServices('MultiCloudSolutions.title'),
+      description: tServices('MultiCloudSolutions.description'),
+      icon: '/services/multi.svg',
+      href: '/services/multi-cloud-solutions',
+    },
+  ];
+  return (
+    <div className="p-4 min-w-[680px] bg-white rounded-xl shadow-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+        {services.map((service, idx) => (
+          <Link key={idx} href={service.href} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
+            <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
+              <Image src={service.icon} alt={service.title + ' icon'} width={18} height={18} />
+            </div>
+            <div>
+              <div className="font-semibold text-[#3b3f48] text-base leading-tight">{service.title}</div>
+              <div className="text-sm text-[#686e7b] mt-1 leading-snug">{service.description}</div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 // const SolutionsFlyout = () => (
 //   <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
@@ -163,6 +131,7 @@ const ServicesFlyout = () => (
 // );
 
 export const Header = () => {
+  const t = useTranslations('Header');
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
@@ -186,6 +155,13 @@ export const Header = () => {
     }
   }, [mobileOpen]);
 
+  const navLinksData: NavLink[] = [
+    { name: t('Home'), hasDropdown: false, path: '/' },
+    { name: t('About'), hasDropdown: false, path: '/about' },
+    { name: t('ServicesNav'), hasDropdown: true, path: '/services' },
+    { name: t('Contact'), hasDropdown: false, path: '/contact' },
+  ];
+
   return (
     <header className="flex w-full h-[72px] items-center justify-between px-4 md:px-8 py-4 fixed top-0 left-0 shadow-[0px_1px_1px_#00000014] z-100 bg-white">
       {/* Logo Section */}
@@ -202,15 +178,7 @@ export const Header = () => {
             {link.hasDropdown ? (
               <FlyoutLink
                 href={link.path}
-                FlyoutContent={
-                  link.name === "Services"
-                    ? ServicesFlyout
-                    // : link.name === "Solutions"
-                    // ? SolutionsFlyout
-                    // : link.name === "Resources"
-                    // ? ResourcesFlyout
-                    : () => <div>No Content</div>
-                }
+                FlyoutContent={ServicesFlyout}
                 className={`relative after:absolute after:bottom-[-3px] after:right-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 dark:after:bg-white after:bg-[#764AF1] after:transition-transform after:duration-1000 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 flex gap-1 items-center${openDropdown === link.name || pathname === link.path ? " after:scale-x-100" : ""}`}
                 isOpen={openDropdown === link.name}
                 onOpenChange={(open: boolean) => setOpenDropdown(open ? link.name : null)}
@@ -231,7 +199,7 @@ export const Header = () => {
         ))}
       </div>
       <Link href={"/free-consultation"} className="hidden lg:flex flex-col items-end justify-center">
-        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform origin-left hover:origin-right delay-150">Free Consultation</Button>
+        <Button className="w-full bg-[#764af1] hover:bg-purple-800 transition-all duration-1000 ease-in-out transform origin-left hover:origin-right delay-150">{t('FreeConsultationNav')}</Button>
       </Link>
       
 
@@ -328,7 +296,7 @@ export const Header = () => {
               </nav>
               {/* Get Started button at bottom */}
               <Link href={"/free-consultation"} className="mt-auto pt-8">
-                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left ">Free Consultation</Button>
+                <Button className="w-full bg-[#764af1] hover:bg-[#6a3fd5] transition-all duration-700 ease-in-out transform hover:scale-95 origin-right hover:origin-left ">{t('FreeConsultationNav')}</Button>
               </Link>
             </motion.div>
           </motion.div>

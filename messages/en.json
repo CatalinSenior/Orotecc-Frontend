@@ -1,0 +1,1011 @@
+{
+  "language": "English",
+  "switch": "Switch to Arabic",
+  "AuthHeader": {
+    "language": "English",
+    "switch": "Switch to Arabic"
+  },
+  "Auth": {
+    "Signup": {
+      "seo": { "title": "Sign Up - Orotecc", "description": "Create your Orotecc account and start your cloud journey." },
+      "exploreFreeTier": "Explore free Tier products with a new Orotecc account.",
+      "learnMore": "To learn more, visit",
+      "signUpTitle": "Create your Orotecc account",
+      "emailLabel": "Email address",
+      "emailHelp": "We'll send a verification code to your email.",
+      "privacyNotice": "Privacy Notice",
+      "accountNameLabel": "Account name",
+      "accountNameHelp": "This will be your Orotecc account name.",
+      "verifyEmail": "Verify email",
+      "or": "or",
+      "signIn": "Sign in",
+      "signInTitle": "Sign in to your account",
+      "createAccount": "Create an account"
+    },
+    "Signin": {
+      "seo": { "title": "Sign In - Orotecc", "description": "Sign in to your Orotecc account to access your cloud dashboard." },
+      "exploreFreeTier": "Explore free Tier products with a new Orotecc account.",
+      "learnMore": "To learn more, visit",
+      "signInTitle": "Sign in to your account",
+      "accountOwner": "Account owner",
+      "accountOwnerDesc": "Root user with full access.",
+      "teamMember": "Team member",
+      "teamMemberDesc": "Limited access for team members.",
+      "emailLabel": "Email address",
+      "passwordLabel": "Password",
+      "forgotPassword": "Forgot password?",
+      "signIn": "Sign in",
+      "or": "or",
+      "createAccount": "Create an account",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use",
+      "copyright": "© 2025 Orotecc Web Services or its affiliates. All rights reserved."
+    },
+    "CompleteSignup": {
+      "seo": { "title": "Complete Signup - Orotecc", "description": "Finish setting up your Orotecc account in a few easy steps." },
+      "Step1SetPassword": {
+        "signUpTitle": "Create your Orotecc account",
+        "createPasswordTitle": "Create your password",
+        "createPasswordDesc": "Your password provides you with sign in access to Orotecc, so it's important we get it right.",
+        "rootPasswordLabel": "Root user password",
+        "confirmRootPasswordLabel": "Confirm root user password",
+        "continue": "Continue (step 1 of 5)",
+        "or": "or",
+        "signIn": "Sign in"
+      },
+      "Step2ContactInformation": {
+        "title": "Contact Information",
+        "contactInfoTitle": "Contact Information",
+        "howDoYouPlanToUse": "How do you plan to use Orotecc?",
+        "businessUsage": "Business - for your work, school, or organization",
+        "personalUsage": "Personal - for your own projects",
+        "whoShouldWeContact": "Who should we contact about this account?",
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Full Name",
+        "countryCode": "Country Code",
+        "selectCodePlaceholder": "Select code",
+        "phoneNumber": "Phone Number",
+        "phoneNumberPlaceholder": "050-555-5555",
+        "countryOrRegion": "Country or Region",
+        "selectCountryPlaceholder": "Select a country",
+        "addressLine1": "Address line 1",
+        "addressLine2": "Address line 2",
+        "addressLine2Placeholder": "Apartment, suite, unit, building, floor, etc.",
+        "city": "City",
+        "stateProvinceRegion": "State, Province, or Region",
+        "postalCode": "Postal Code",
+        "termsOfAgreement": "I have read and agree to the terms of the Orotecc Customer Agreement",
+        "agreeAndContinue": "Agree and continue (step 2 of 5)",
+        "previous": "Previous"
+      },
+      "Step3Billing": {
+        "title": "Billing Information",
+        "useContactAddress": "Use my contact address",
+        "verifyContinue": "Verify and continue (step 3 of 5)"
+      },
+      "Step4VerifyIdentityPhone": {
+        "title": "Verify Your Identity",
+        "description": "To activate your Orotecc account, we need to confirm your phone number.",
+        "verification_code_info": "Once you proceed, our system will reach out with a one-time verification code.",
+        "choose_method_label": "Choose how you'd like to receive your code:",
+        "sms_method": "SMS (Text message)",
+        "voice_method": "Voice Call",
+        "mobile_number_label": "Mobile Number",
+        "mobile_number_placeholder": "Enter a phone number",
+        "recaptcha_placeholder": "reCAPTCHA goes here",
+        "send_sms_button": "Send SMS (step 4 of 5)"
+      },
+      "Step5OtpCode": {
+        "title": "Enter Verification Code",
+        "enterCode": "Enter the code we've sent to",
+        "continue": "Continue (Step 4 of 5)",
+        "didNotGetCode": "Didn't get a code?",
+        "clickResend": "Click resend."
+      },
+      "Step6Welcome": {
+        "imageAlt": "Welcome to Orotecc",
+        "title": "Welcome to Orotecc!",
+        "thankYou": "Thank you for signing up.",
+        "description": "Your account is ready. Start exploring our cloud solutions.",
+        "goToDashboard": "Go to Dashboard",
+        "signupAgain": "Sign up again",
+        "or": "or",
+        "contactSupport": "Contact support",
+        "Footer": {
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Use",
+          "copyright": "© 2025 Orotecc Web Services or its affiliates. All rights reserved."
+        }
+      }
+    }
+  },
+  "Home": {
+    "heroTitle": "Transform Your Business with Cloud Solutions",
+    "heroSubtitle": "Empowering enterprises with cutting-edge cloud infrastructure and digital transformation services",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "servicesTitle": "Our Services",
+    "servicesSubtitle": "Comprehensive cloud solutions tailored to your business needs",
+    "cloudTitle": "Cloud Solutions",
+    "cloudSubtitle": "Scalable and secure cloud infrastructure for modern businesses",
+    "aboutTitle": "About Orotecc",
+    "aboutSubtitle": "Your trusted partner in digital transformation",
+    "partnerTitle": "AWS Partner",
+    "partnerSubtitle": "Certified AWS partner delivering enterprise-grade solutions",
+    "testimonialTitle": "What Our Clients Say",
+    "testimonialSubtitle": "Success stories from businesses we've transformed",
+    "AwsPartner": {
+      "title": "AWS PARTNER",
+      "subtitle": "AWS Consulting Competencies"
+    },
+    "CloudSolution": {
+      "title": "CLOUD SOLUTIONS FOR EVERY BUSINESS",
+      "subtitle": "Empower your business with seamless cloud transformation",
+      "cta": "Start Your Cloud Journey",
+      "cards": [
+        {
+          "title": "Optimize Operations",
+          "description": "Leverage cloud technology for efficiency and cost savings"
+        },
+        {
+          "title": "Enhance Security",
+          "description": "Protect sensitive data with industry-leading security measures"
+        },
+        {
+          "title": "Boost Performance",
+          "description": "Improve speed, scalability, and reliability with cloud-based solutions"
+        },
+        {
+          "title": "Enable Innovation",
+          "description": "Utilize AI, automation, and analytics to stay ahead"
+        }
+      ]
+    },
+    "seo": {
+      "title": "Orotecc - Cloud Solutions for Every Business",
+      "description": "Transform your business with secure, scalable cloud solutions from Orotecc. Learn more about our services, team, and expertise."
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Your Trusted Partner in Digital Transformation",
+    "heroTitle": "Powering Secure & Scalable Cloud Solutions",
+    "heroSubtitle": "Driving innovation, security, and efficiency through cutting-edge cloud technology",
+    "mission": "Our Mission",
+    "missionText": "To empower businesses with innovative cloud solutions that drive growth and efficiency.",
+    "vision": "Our Vision",
+    "visionText": "To be the leading cloud transformation partner for enterprises worldwide.",
+    "values": "Our Values",
+    "innovation": "Innovation",
+    "innovationText": "Constantly pushing boundaries with cutting-edge technology",
+    "excellence": "Excellence",
+    "excellenceText": "Delivering the highest quality solutions and service",
+    "trust": "Trust",
+    "trustText": "Building long-term partnerships based on reliability and transparency",
+    "teamTitle": "Meet Our Team",
+    "teamSubtitle": "Expert professionals dedicated to your success",
+    "securityTitle": "Security & Uptime",
+    "securityDesc": "Enterprise-grade security measures, ensuring 99.99% uptime and data protection",
+    "expertiseTitle": "Cloud Expertise",
+    "expertiseDesc": "Certified cloud professionals, years of experience",
+    "scalabilityTitle": "Scalability",
+    "scalabilityDesc": "Flexible solutions designed for all businesses of all sizes",
+    "supportTitle": "24/7 Support",
+    "supportDesc": "Dedicated 24/7 expert cloud assistance anytime",
+    "ceo": "CEO",
+    "executiveDirector": "Executive Director",
+    "director": "Director",
+    "marketing": "Marketing",
+    "awsManager": "AWS Technology Manager",
+    "cloudHead": "Head - Cloud Services",
+    "ahmedDesc": "Support companies in scaling seamlessly with innovative cloud strategies. With a client-focused approach and industry-leading expertise, we help businesses of all sizes unlock the full potential of the cloud.",
+    "johnDesc": "At Orotecc, we specialize in providing secure, scalable, and cutting-edge cloud solutions tailored to modern business needs. Our expertise spans cloud security, infrastructure, automation, and AI-driven analytics, enabling organizations to maximize efficiency and growth.",
+    "janeDesc": "Jane, a former CIO at CardConnect, has spent over a decade helping ISOs, ISVs and Merchants develop applications and manage integrations in the payments space. To RUN, Jane brings extensive knowledge in many core facets of the payments ecosystem.",
+    "irfanDesc": "Support companies in scaling seamlessly with innovative cloud strategies. With a client-focused approach and industry-leading expertise, we help businesses of all sizes unlock the full potential of the cloud.",
+    "rashidDesc": "At Orotecc, we specialize in providing secure, scalable, and cutting-edge cloud solutions tailored to modern business needs. Our expertise spans cloud security, infrastructure, automation, and AI-driven analytics, enabling organizations to maximize efficiency and growth.",
+    "arifaDesc": "Jane, a former CIO at CardConnect, has spent over a decade helping ISOs, ISVs and Merchants develop applications and manage integrations in the payments space. To RUN, Jane brings extensive knowledge in many core facets of the payments ecosystem.",
+    "whoWeAreTitle": "WHO WE ARE",
+    "whoWeAreHeading": "Experts in cloud transformation",
+    "whoWeAreDescription": "At Orotecc, we specialize in delivering cutting-edge cloud solutions that help businesses scale, innovate, and secure their digital assets. With a team of certified cloud experts, we empower organizations to optimize their infrastructure, enhance security, and streamline operations.\n\nWe provide secure, scalable, and efficient cloud solutions to drive business success.",
+    "whyChooseUsTitle": "WHY CHOOSE US?",
+    "whyChooseUsHeading": "Reliable, secure, and expert-driven",
+    "whyChooseUsBgAlt": "Background decoration",
+    "whyChooseUsMissionAlt": "Orotecc Mission",
+    "whyChooseUsAboutTitle": "ABOUT OROTECC",
+    "whyChooseUsAboutHeading": "Innovative Cloud Solutions for a Secure and Scalable Future",
+    "whyChooseUsAboutDescription": "At Orotecc, we specialize in cutting-edge cloud solutions that drive business growth and innovation. With a team of certified experts, we help businesses harness the power of cloud computing, ensuring security, scalability, and efficiency. Whether it's cloud migration, DevOps, AI-driven analytics, or multi-cloud management, we provide tailored solutions to meet your needs. Empower your business with seamless cloud transformation.",
+    "meetOurTeamTitle": "Meet Our Team",
+    "meetOurTeamHeading": "Our Dedicated Professionals",
+    "meetOurTeamDescription": "We are passionate about delivering the best cloud solutions for your business.",
+    "sectionLabel": "ABOUT OROTECC",
+    "headline": "Innovative Cloud Solutions for a Secure and Scalable Future",
+    "description": "At Orotecc, we specialize in cutting-edge cloud solutions that drive business growth and innovation. With a team of certified experts, we help businesses harness the power of cloud computing, ensuring security, scalability, and efficiency. Whether it's cloud migration, DevOps, AI-driven analytics, or multi-cloud management, we provide tailored solutions to meet your needs. Empower your business with seamless cloud transformation.",
+    "learnMoreButton": "Learn More",
+    "seo": {
+      "title": "About Orotecc - Cloud Experts",
+      "description": "Learn about Orotecc, your trusted partner in digital transformation and cloud solutions."
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "heroTitle": "Let's Start a Conversation",
+    "heroSubtitle": "Have a question, project in mind, or just want to connect? We're here to help.",
+    "getInTouch": "Get in Touch",
+    "formDescription": "Fill out the form below and our team will get back to you within 24 hours.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Mobile Number",
+    "phonePlaceholder": "Enter a phone number",
+    "message": "Message",
+    "sendMessage": "Submit",
+    "submitting": "Submitting...",
+    "successMessage": "Thank you! Your message has been sent.",
+    "contactDetails": "Contact Details",
+    "reachUs": "Reach us through any of the following channels below.",
+    "headquarter": "HEADQUARTER",
+    "addressText": "Al Manama Tower, Office 2313, Business Bay, Dubai",
+    "phoneContact": "CALL US",
+    "emailContact": "EMAIL US",
+    "followUs": "JOIN OUR NETWORK",
+    "socialMedia": "Facebook, YouTube, LinkedIn",
+    "firstNameRequired": "First Name is required",
+    "lastNameRequired": "Last Name is required",
+    "invalidEmail": "Invalid email address",
+    "mobileRequired": "Mobile Number is required",
+    "invalidPhone": "Invalid phone number",
+    "messageRequired": "Message is required",
+    "seo": {
+      "title": "Contact Orotecc - Get in Touch",
+      "description": "Contact Orotecc for cloud consulting, support, and partnership opportunities. Our team is ready to help you transform your business."
+    }
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive cloud solutions for your business",
+    "cloudInfrastructure": "Cloud Infrastructure",
+    "cloudInfrastructureDesc": "Scalable and secure cloud infrastructure solutions",
+    "cloudSecurity": "Cloud Security",
+    "cloudSecurityDesc": "Advanced security solutions to protect your data",
+    "dataAnalytics": "Data Analytics & AI",
+    "dataAnalyticsDesc": "Transform data into actionable insights",
+    "devOps": "DevOps & Automation",
+    "devOpsDesc": "Streamline development and deployment processes",
+    "managedCloud": "Managed Cloud",
+    "managedCloudDesc": "Fully managed cloud services for your business",
+    "multiCloud": "Multi-Cloud Solutions",
+    "multiCloudDesc": "Optimize across multiple cloud platforms",
+    "awsSolutions": "AWS Solutions",
+    "awsSolutionsDesc": "Certified AWS solutions and consulting",
+    "cloudApps": "Cloud Applications",
+    "cloudAppsDesc": "Custom cloud applications and SaaS solutions",
+    "AwsSolutions": {
+      "heroTitle": "AWS Solutions",
+      "heroSubtitle": "End-to-end AWS expertise for growth, migration, and optimization",
+      "bannerAlt": "AWS Solutions Banner",
+      "whatIsTitle": "What is AWS Solutions?",
+      "whatIsDesc": "AWS offers scalable, on-demand services for compute, storage, AI, and DevOps. Our AWS experts help design, migrate, manage, and optimize your cloud workloads with proven architectures and automation.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/aws-solution-page/aws.png",
+          "title": "Cloud Architecture & Deployment",
+          "description": "Design AWS environments built for scale, security, and cost control."
+        },
+        {
+          "icon": "/aws-solution-page/migration.png",
+          "title": "AWS Application Migration",
+          "description": "Move workloads to AWS with minimal disruption and maximum efficiency."
+        },
+        {
+          "icon": "/aws-solution-page/serverless.png",
+          "title": "Serverless Development (Lambda)",
+          "description": "Build applications without managing servers using event-driven functions."
+        },
+        {
+          "icon": "/aws-solution-page/cost.png",
+          "title": "Cost Optimization & Performance Tuning",
+          "description": "Monitor, analyze, and reduce cloud spending while enhancing performance."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "E-Commerce Optimization",
+          "description": "An e-commerce brand is hosted on AWS EC2 and its media assets on S3, while using CloudFront for global delivery. The architecture ensures fast page loads and fault tolerance."
+        },
+        {
+          "title": "Serverless Architecture",
+          "description": "A mobile startup builds its backend with AWS Lambda and DynamoDB. This eliminates the need to manage servers while automatically scaling functions based on traffic."
+        },
+        {
+          "title": "Enterprise Migration",
+          "description": "A global insurance firm migrates its core systems to AWS using AWS Migration Hub. Legacy data is transferred securely, and downtime is minimized through phased rollouts."
+        },
+        {
+          "title": "Cost Optimization",
+          "description": "A startup using multiple AWS services implements AWS Cost Explorer and uses auto-scaling with spot instances to cut monthly costs by 35% without sacrificing performance."
+        }
+      ],
+      "seo": {
+        "title": "AWS Solutions - Orotecc",
+        "description": "Certified AWS consulting, migration, and optimization services from Orotecc."
+      }
+    }
+  },
+  "Footer": {
+    "company": "Company",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "careers": "Careers",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "documentation": "Documentation",
+    "status": "Status",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "disclaimer": "Disclaimer",
+    "cookies": "Cookie Policy",
+    "social": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterText": "Stay updated with our latest news and offers",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Enter your email",
+    "sitemap": "Sitemap",
+    "resources": "Resources",
+    "copyright": "© 2025 Orotecc Web Services or its affiliates. All rights reserved.",
+    "logoAlt": "Orotecc Logo",
+    "addressAlt": "Address",
+    "phoneAlt": "Phone",
+    "mailAlt": "Mail"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "home": "Home",
+    "form": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email address",
+      "invalidPhone": "Invalid phone number",
+      "passwordMismatch": "Passwords do not match",
+      "minLength": "Minimum length is {{min}} characters",
+      "maxLength": "Maximum length is {{max}} characters",
+      "success": "Form submitted successfully!",
+      "error": "An error occurred while submitting the form. Please try again."
+    },
+    "ui": {
+      "loading": "Loading...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "view": "View",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "submit": "Submit",
+      "reset": "Reset",
+      "search": "Search",
+      "filter": "Filter",
+      "sort": "Sort",
+      "close": "Close",
+      "open": "Open",
+      "confirm": "Are you sure?",
+      "ok": "OK",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "Step1SetPassword": {
+    "createPasswordTitle": "Create your password",
+    "createPasswordDesc": "Your password provides you with sign in access to Orotecc, so it's important we get it right.",
+    "rootPasswordLabel": "Root user password",
+    "confirmRootPasswordLabel": "Confirm root user password",
+    "continue": "Continue (step 1 of 5)"
+  },
+  "Step2ContactInformation": {
+    "title": "Contact Information",
+    "contactInfoTitle": "Contact Information",
+    "howDoYouPlanToUse": "How do you plan to use Orotecc?",
+    "businessUsage": "Business - for your work, school, or organization",
+    "personalUsage": "Personal - for your own projects",
+    "whoShouldWeContact": "Who should we contact about this account?",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Full Name",
+    "countryCode": "Country Code",
+    "selectCodePlaceholder": "Select code",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "050-555-5555",
+    "countryOrRegion": "Country or Region",
+    "selectCountryPlaceholder": "Select a country",
+    "addressLine1": "Address line 1",
+    "addressLine2": "Address line 2",
+    "addressLine2Placeholder": "Apartment, suite, unit, building, floor, etc.",
+    "city": "City",
+    "stateProvinceRegion": "State, Province, or Region",
+    "postalCode": "Postal Code",
+    "termsOfAgreement": "I have read and agree to the terms of the Orotecc Customer Agreement",
+    "agreeAndContinue": "Agree and continue (step 2 of 5)",
+    "previous": "Previous"
+  },
+  "Step3Billing": {
+    "title": "Billing Information",
+    "useContactAddress": "Use my contact address",
+    "verifyContinue": "Verify and continue (step 3 of 5)"
+  },
+  "Step4VerifyIdentityPhone": {
+    "title": "Verify Your Identity",
+    "description": "To activate your Orotecc account, we need to confirm your phone number.",
+    "verification_code_info": "Once you proceed, our system will reach out with a one-time verification code.",
+    "choose_method_label": "Choose how you'd like to receive your code:",
+    "sms_method": "SMS (Text message)",
+    "voice_method": "Voice Call",
+    "mobile_number_label": "Mobile Number",
+    "mobile_number_placeholder": "Enter a phone number",
+    "recaptcha_placeholder": "reCAPTCHA goes here",
+    "send_sms_button": "Send SMS (step 4 of 5)"
+  },
+  "Step5OtpCode": {
+    "title": "Enter Verification Code",
+    "enterCode": "Enter the code we've sent to",
+    "continue": "Continue (Step 4 of 5)",
+    "didNotGetCode": "Didn't get a code?",
+    "clickResend": "Click resend."
+  },
+  "Step6Welcome": {
+    "imageAlt": "Cloud",
+    "title": "Welcome to Orotecc!",
+    "thankYou": "Thanks for joining us.",
+    "description": "We're setting up your account now — this usually takes just a few minutes. You'll receive a confirmation email once everything is ready.",
+    "goToDashboard": "Go to Orotecc Dashboard",
+    "signupAgain": "Create another account",
+    "or": "or",
+    "contactSupport": "Get in touch with Sales",
+    "Footer": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "copyright": "© 2025 Orotecc Web Services or its affiliates. All rights reserved."
+    }
+  },
+  "AwsPartner": {
+    "title": "AWS PARTNER",
+    "subtitle": "AWS Consulting Competencies"
+  },
+   "CloudSolution": {
+    "title": "CLOUD SOLUTIONS FOR EVERY BUSINESS",
+    "subtitle": "Empower your business with seamless cloud transformation",
+    "cta": "Start Your Cloud Journey",
+    "cards": [
+      {
+        "title": "Optimize Operations",
+        "description": "Leverage cloud technology for efficiency and cost savings"
+  },
+      {
+        "title": "Enhance Security",
+        "description": "Protect sensitive data with industry-leading security measures"
+      },
+      {
+        "title": "Boost Performance",
+        "description": "Improve speed, scalability, and reliability with cloud-based solutions"
+      },
+      {
+        "title": "Enable Innovation",
+        "description": "Utilize AI, automation, and analytics to stay ahead"
+      }
+    ]
+  },
+  "Hero": {
+    "bannerAlt": "Banner",
+    "aboutBannerAlt": "About banner"
+  },
+  "Testimonial": {
+    "title": "WHAT OUR CLIENTS SAY",
+    "heading": "Trusted by Businesses – See How Orotecc Delivers Excellence",
+    "more": "More Testimonials",
+    "quote1": "Orotecc has completely transformed our cloud infrastructure. Their expertise in AWS and DevOps helped us scale seamlessly while maintaining top-notch security.",
+    "name1": "John Smith",
+    "position1": "CTO at TechCorp",
+    "quote2": "Partnering with Orotecc was one of the best decisions for our business. Their cloud security solutions ensured our sensitive customer data remained protected.",
+    "name2": "Sarah Johnson",
+    "position2": "CEO of RetailFlow",
+    "quote3": "We needed a reliable cloud partner, and Orotecc delivered beyond expectations. From migration to ongoing management, they handled everything with precision and efficiency.",
+    "name3": "Michael Lee",
+    "position3": "Head of IT at FinTrust",
+    "quote4": "Orotecc provided us with a scalable multi-cloud solution that revolutionized how we manage student data and online learning platforms.",
+    "name4": "Emily Carter",
+    "position4": "Director at EduCloud"
+  },
+  "Schedule": {
+    "headline": "TRANSFORM YOUR CLOUD INFRASTRUCTURE",
+    "title": "Ready to Elevate Your Cloud Strategy?",
+    "description": "Orotecc provides secure, scalable cloud solutions tailored to accelerate your business. From seamless migration to advanced AI analytics, we help you build a cloud infrastructure that grows with you.",
+    "cta": "Schedule a Consultation"
+  },
+  "CloudInfrastructure": {
+    "heroTitle": "Cloud Infrastructure",
+    "heroSubtitle": "Scalable, high-performance foundations for modern digital systems",
+    "bannerAlt": "Cloud Infrastructure Banner",
+    "whatIsTitle": "What is Cloud Infrastructure?",
+    "whatIsDesc": "Cloud infrastructure delivers computing, storage, and networking capabilities over the internet. It replaces traditional on-premise systems with scalable, flexible resources that adapt to demand. Businesses benefit from lower upfront costs, higher availability, faster deployments, and seamless scalability.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/services-page/machine.png",
+        "title": "Virtual Machines & Compute Resources",
+        "description": "Deploy scalable virtual servers tailored to your application workloads."
+      },
+      {
+        "icon": "/services-page/storage.png",
+        "title": "Cloud Storage Solutions",
+        "description": "Store and access data with high durability and performance."
+      },
+      {
+        "icon": "/services-page/load.png",
+        "title": "Network Architecture & Load Balancing",
+        "description": "Design reliable cloud networks and distribute traffic intelligently."
+      },
+      {
+        "icon": "/services-page/code.png",
+        "title": "Infrastructure as Code (IaC)",
+        "description": "Automate provisioning and configuration using tools like Terraform."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "SaaS Startup Deployment",
+        "description": "A startup launches its SaaS platform using containerized infrastructure and scalable compute resources. The cloud ensures low-latency performance, automatic scaling, and rapid global expansion without upfront hardware investment."
+      },
+      {
+        "title": "Legacy System Modernization",
+        "description": "A large enterprise migrates legacy applications to a cloud environment. By leveraging virtual networks and IAC, they reduce infrastructure overhead, eliminate downtime from aging hardware, and modernize operations."
+      },
+      {
+        "title": "Event-Based Scaling",
+        "description": "An online ticketing platform prepares for peak traffic during high-profile events. Cloud-based auto-scaling ensures that server capacity increases automatically under load, guaranteeing uninterrupted service."
+      },
+      {
+        "title": "Disaster Recovery Architecture",
+        "description": "A financial institution sets up a cloud-based disaster recovery environment across multiple regions, ensuring data redundancy and instant failover capabilities in case of infrastructure failure."
+      }
+    ],
+    "seo": {
+      "title": "Cloud Infrastructure Services - Orotecc",
+      "description": "Scalable, secure cloud infrastructure for modern businesses. Learn about our cloud infrastructure solutions."
+    }
+  },
+  "CloudSecurity": {
+    "heroTitle": "Cloud Security",
+    "heroSubtitle": "Advanced security strategies for a cloud-first world",
+    "bannerAlt": "Cloud Security Banner",
+    "whatIsTitle": "What is Cloud Security?",
+    "whatIsDesc": "Cloud security comprises technologies and best practices that protect cloud infrastructure, applications, and data. It involves identity control, encryption, threat detection, compliance, and real-time protection from evolving cyber threats.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/cloud-security-page/identity.png",
+        "title": "Identity & Access Management (IAM)",
+        "description": "Define and enforce secure access policies for users and apps."
+      },
+      {
+        "icon": "/cloud-security-page/transit.png",
+        "title": "Encryption at Rest and In Transit",
+        "description": "Protect sensitive data with end-to-end encryption mechanisms."
+      },
+      {
+        "icon": "/cloud-security-page/threat.png",
+        "title": "Threat Monitoring and Response",
+        "description": "Detect and respond to threats in real time using intelligent tools."
+      },
+      {
+        "icon": "/cloud-security-page/thrust.png",
+        "title": "Zero Trust Architecture",
+        "description": "Secure your network with continuous verification and segmentation."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "Regulatory Compliance for Healthcare",
+        "description": "A health-tech firm secures patient records by enforcing role-based access, encrypting data at rest and in transit, and implementing logging and auditing for HIPAA compliance."
+      },
+      {
+        "title": "Zero Trust Architecture for Remote Teams",
+        "description": "A distributed organization rolls out a zero-trust framework to secure access to critical systems. Every user and device is verified before access, reducing insider threats."
+      },
+      {
+        "title": "Threat Detection and Response",
+        "description": "A retail company integrates cloud-native SIEM tools to detect anomalous login behavior and unauthorized access attempts. Automated alerts and responses minimize breach risk."
+      },
+      {
+        "title": "Secure Cloud Migration",
+        "description": "A logistics provider transitions to the cloud with end-to-end encryption and identity controls, ensuring a secure environment during and after migration."
+      }
+    ],
+    "seo": {
+      "title": "Cloud Security Services - Orotecc",
+      "description": "Protect your data and applications with Orotecc's advanced cloud security solutions."
+    }
+  },
+  "DataAnalyticsAI": {
+    "heroTitle": "Data Analytics & AI",
+    "heroSubtitle": "Unlock insights and make smarter decisions with AI-driven data",
+    "bannerAlt": "Data Analytics & AI Banner",
+    "whatIsTitle": "What is Data Analytics & AI?",
+    "whatIsDesc": "Data Analytics & AI helps businesses convert raw data into insights using machine learning, predictive models, and real-time analytics. It powers decisions, automation, and personalized customer experiences.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/data-analytics-page/data.png",
+        "title": "Data Lakes & Warehousing",
+        "description": "Centralize structured and unstructured data for analytics at scale."
+      },
+      {
+        "icon": "/data-analytics-page/model.png",
+        "title": "Machine Learning & Model Training",
+        "description": "Develop predictive models to solve real-world business challenges."
+      },
+      {
+        "icon": "/data-analytics-page/predictive.png",
+        "title": "Predictive & Prescriptive Analytics",
+        "description": "Anticipate trends and recommend actions using advanced analytics."
+      },
+      {
+        "icon": "/data-analytics-page/ai.png",
+        "title": "AI Chatbots & NLP Applications",
+        "description": "Build conversational bots and intelligent assistants with NLP."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "Customer Behavior Prediction",
+        "description": "A retail chain uses machine learning to identify customer preferences and predict purchases. This informs personalized campaigns and boosts sales."
+      },
+      {
+        "title": "Real-Time Fraud Detection",
+        "description": "A digital bank uses AI to monitor transactions in real-time. Suspicious patterns are flagged instantly, and automated workflows freeze accounts to prevent fraud."
+      },
+      {
+        "title": "Operational Dashboards",
+        "description": "A logistics firm aggregates GPS and IoT data into dashboards for real-time fleet tracking, improving delivery performance and route efficiency."
+      },
+      {
+        "title": "AI Chatbot for Support",
+        "description": "A tech platform deploys an NLP-powered chatbot for 24/7 customer support, handling 60% of queries and reducing ticket resolution time significantly."
+      }
+    ],
+    "seo": {
+      "title": "Data Analytics & AI Services - Orotecc",
+      "description": "Unlock insights and drive smarter decisions with Orotecc's data analytics and AI solutions."
+    }
+  },
+  "DevOpsAutomation": {
+    "heroTitle": "DevOps & Automation",
+    "heroSubtitle": "Streamlined workflows and faster delivery through smart automation",
+    "bannerAlt": "DevOps & Automation Banner",
+    "whatIsTitle": "What is DevOps & Automation?",
+    "whatIsDesc": "DevOps integrates software development and IT operations, emphasizing automation, collaboration, and continuous delivery. By automating code integration, testing, and deployment, teams release faster with fewer errors.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/devops-automation-page/pipeline.png",
+        "title": "CI/CD Pipeline Implementation",
+        "description": "Enable faster, reliable releases through continuous integration and delivery."
+      },
+      {
+        "icon": "/devops-automation-page/infrastructure.png",
+        "title": "Infrastructure Automation",
+        "description": "Manage infrastructure at scale with declarative automation tools."
+      },
+      {
+        "icon": "/devops-automation-page/monitoring.png",
+        "title": "Monitoring & Alerting",
+        "description": "Track system health and respond quickly with real-time insights."
+      },
+      {
+        "icon": "/devops-automation-page/container.png",
+        "title": "Container Orchestration",
+        "description": "Package and manage applications across environments seamlessly."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "CI/CD For FinTech App",
+        "description": "A FinTech startup uses GitHub Actions and Docker containers to build, test, and deploy updates multiple times a day, reducing release cycles from weeks to hours."
+      },
+      {
+        "title": "Infrastructure Automation for Agencies",
+        "description": "A digital agency automates infrastructure setup for multiple clients using Terraform and Ansible, eliminating manual errors and reducing provisioning time by 80%."
+      },
+      {
+        "title": "Blue/Green Deployments",
+        "description": "A telecom company implements blue/green deployment to release new versions with zero downtime and instant rollback options in case of issues."
+      },
+      {
+        "title": "Automated Testing & QA",
+        "description": "A gaming company integrates automated testing in its CI pipeline. Every code change triggers end-to-end tests, cutting QA overhead and improving release confidence."
+      }
+    ],
+    "seo": {
+      "title": "DevOps & Automation Services - Orotecc",
+      "description": "Streamline your development and deployment with Orotecc's DevOps and automation services."
+    }
+  },
+  "ManagedCloud": {
+    "heroTitle": "Managed Cloud",
+    "heroSubtitle": "Reliable cloud operations — monitored, maintained, and supported",
+    "bannerAlt": "Managed Cloud Banner",
+    "whatIsTitle": "What is Managed Cloud?",
+    "whatIsDesc": "Managed cloud services provide full operational support for your cloud infrastructure, including monitoring, updates, backups, and cost optimization, so your team can focus on innovation.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/managed-cloud-page/cloud.png",
+        "title": "24/7 Cloud Monitoring & Alerts",
+        "description": "Proactive system monitoring with instant alerts and resolution."
+      },
+      {
+        "icon": "/managed-cloud-page/security.png",
+        "title": "Security Updates & Patch Management",
+        "description": "Keep systems secure and up-to-date automatically."
+      },
+      {
+        "icon": "/managed-cloud-page/performance.png",
+        "title": "Performance Optimization",
+        "description": "Fine-tune cloud environments for speed, efficiency, and reliability."
+      },
+      {
+        "icon": "/managed-cloud-page/recovery.png",
+        "title": "Disaster Recovery Management",
+        "description": "Ensure business continuity with backup and failover solutions."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "24/7 Monitoring for SaaS App",
+        "description": "A SaaS company offloads monitoring and incident response to a managed provider, ensuring fast issue resolution and 99.99% uptime."
+      },
+      {
+        "title": "MSP Support for Multi-Cloud Environments",
+        "description": "An enterprise spans AWS and Azure. A managed provider handles health checks, logging, and cross-platform policy enforcement."
+      },
+      {
+        "title": "Monthly Cost Reporting & Governance",
+        "description": "A nonprofit receives monthly usage analytics and cost reports, helping them stay within grant budgets while maintaining performance."
+      },
+      {
+        "title": "Proactive Maintenance & Scaling",
+        "description": "An EdTech platform experiences seasonal spikes. The managed cloud team proactively scales resources and pre-tunes performance for traffic surges."
+      }
+    ],
+    "seo": {
+      "title": "Managed Cloud Services - Orotecc",
+      "description": "24/7 managed cloud operations, monitoring, and support from Orotecc."
+    }
+  },
+  "MultiCloudSolutions": {
+    "heroTitle": "Multi-Cloud Solutions",
+    "heroSubtitle": "Smart strategies for resilient, flexible cloud deployments",
+    "bannerAlt": "Multi-Cloud Solutions Banner",
+    "whatIsTitle": "What is Multi-Cloud Solutions?",
+    "whatIsDesc": "Multi-cloud refers to using services from multiple cloud providers to increase reliability, avoid vendor lock-in, and ensure compliance. We help architect, deploy, and manage integrated multi-cloud environments.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/multi-cloud/cross.png",
+        "title": "Cross-Cloud Strategy & Integration",
+        "description": "Architect solutions that leverage multiple cloud providers effectively."
+      },
+      {
+        "icon": "/multi-cloud/data.png",
+        "title": "Data Synchronization Across Clouds",
+        "description": "Keep data consistent across AWS, Azure, GCP, and others."
+      },
+      {
+        "icon": "/multi-cloud/compliance.png",
+        "title": "Compliance-Driven Deployments",
+        "description": "Align cloud usage with local laws and industry regulations."
+      },
+      {
+        "icon": "/multi-cloud/recovery.png",
+        "title": "Disaster Recovery & Failover",
+        "description": "Ensure resilience with cloud-to-cloud replication and failover."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "Avoiding Vendor Lock-in",
+        "description": "A tech firm runs front-end services on AWS while hosting analytics on GCP, gaining flexibility and leveraging the strengths of each provider."
+      },
+      {
+        "title": "Compliance-Driven Strategy",
+        "description": "A multinational corporation stores customer data on region-specific clouds (Azure in the EU, AWS in the US) to meet data residency laws."
+      },
+      {
+        "title": "Cross-Cloud Data Syncing",
+        "description": "A fintech startup syncs customer data between GCP (analytics) and AWS (app logic) to optimize both cost and performance."
+      },
+      {
+        "title": "High Availability Architecture",
+        "description": "A media company uses Azure and AWS in parallel, with auto-failover systems ensuring zero downtime even if one provider goes down."
+      }
+    ],
+    "seo": {
+      "title": "Multi-Cloud Solutions - Orotecc",
+      "description": "Flexible, resilient multi-cloud strategies and integration from Orotecc."
+    }
+  },
+  "CloudApps": {
+    "heroTitle": "Cloud Apps",
+    "heroSubtitle": "Purpose-built applications designed for speed, scale, and performance",
+    "bannerAlt": "Cloud Apps Banner",
+    "whatIsTitle": "What is Cloud Apps?",
+    "whatIsDesc": "Cloud apps are built for the cloud from day one. They're scalable, secure, and accessible from anywhere. We develop custom cloud-native apps tailored to business goals, powered by APIs, microservices, and modern UX.",
+    "keyComponentsTitle": "Key Service Components",
+    "keyComponents": [
+      {
+        "icon": "/cloud-app-page/cloud-native.png",
+        "title": "Cloud-Native App Development",
+        "description": "Build robust applications optimized for cloud performance."
+      },
+      {
+        "icon": "/cloud-app-page/saas.png",
+        "title": "SaaS Product Engineering",
+        "description": "Develop scalable, subscription-based software platforms."
+      },
+      {
+        "icon": "/cloud-app-page/microservices.png",
+        "title": "Microservices Architecture",
+        "description": "Create flexible, decoupled services for modern app delivery."
+      },
+      {
+        "icon": "/cloud-app-page/api-design.png",
+        "title": "API Design & Integration",
+        "description": "Connect systems and services with secure, well-structured APIs."
+      }
+    ],
+    "useCasesTitle": "Use cases",
+    "useCases": [
+      {
+        "title": "Custom CRM on Cloud",
+        "description": "A B2B company replaces spreadsheets with a tailored CRM application, built on cloud-native architecture with real-time collaboration and mobile support."
+      },
+      {
+        "title": "SaaS Product Development",
+        "description": "A startup launches a cloud-based task management app with subscription billing, multi-user access, and seamless scalability."
+      },
+      {
+        "title": "Internal Business Tools",
+        "description": "A manufacturing company digitizes production tracking and team coordination via internal cloud apps integrated with their ERP."
+      },
+      {
+        "title": "Hybrid App Backend",
+        "description": "A company building a mobile platform hosts the backend in the cloud using Firebase and custom APIs, enabling real-time user sync and fast content delivery."
+      }
+    ],
+    "seo": {
+      "title": "Cloud Apps & SaaS Solutions - Orotecc",
+      "description": "Custom cloud applications and SaaS solutions for performance and scalability."
+    }
+  },
+  "FreeConsultation": {
+    "heroTitle": "Free Consultation",
+    "heroSubtitle": "Let's find the right approach together",
+    "bannerAlt": "Consultation Banner",
+    "formTitle": "Book a free consultation",
+    "formDescription": "Fill out the form below and our team will get back to you within 24 hours.",
+    "firstNameLabel": "First Name *",
+    "lastNameLabel": "Last Name *",
+    "companyNameLabel": "Company Name",
+    "emailLabel": "Email address *",
+    "mobileLabel": "Mobile Number *",
+    "mobilePlaceholder": "Enter a phone number",
+    "servicesLabel": "Service(s) interested in *",
+    "messageLabel": "Message *",
+    "bookNow": "Book Now",
+    "booking": "Booking...",
+    "successMessage": "Thank you! Your request has been sent.",
+    "services": {
+      "cloudInfrastructure": "Cloud Infrastructure",
+      "devOps": "DevOps & Automation",
+      "cloudApps": "Cloud Apps",
+      "cloudSecurity": "Cloud Security",
+      "dataAnalytics": "Data Analytics & AI",
+      "multiCloud": "Multi-Cloud Solutions",
+      "awsSolutions": "AWS Solutions",
+      "managedCloud": "Managed Cloud",
+      "other": "Other"
+    },
+    "errors": {
+      "firstNameRequired": "First Name is required",
+      "lastNameRequired": "Last Name is required",
+      "emailInvalid": "Invalid email address",
+      "mobileRequired": "Mobile Number is required",
+      "mobileInvalid": "Invalid phone number",
+      "servicesRequired": "Please select at least one service",
+      "messageRequired": "Message is required"
+    },
+    "seo": {
+      "title": "Free Cloud Consultation - Orotecc",
+      "description": "Book a free consultation with Orotecc's cloud experts. Discover how we can help your business grow with secure, scalable cloud solutions."
+    }
+  },
+  "Header": {
+    "Home": "Home",
+    "About": "About",
+    "ServicesNav": "Services",
+    "Contact": "Contact",
+    "FreeConsultationNav": "Free Consultation",
+    "FreeConsultation": "Free Consultation",
+    "Services": {
+      "CloudInfrastructure": {
+        "title": "Cloud Infrastructure",
+        "description": "Scalable and reliable cloud computing solutions"
+      },
+      "CloudSecurity": {
+        "title": "Cloud Security",
+        "description": "Advanced protection to secure your data"
+      },
+      "AWSSolutions": {
+        "title": "AWS Solutions",
+        "description": "Expert AWS consulting, migration, and optimization"
+      },
+      "DevOpsAutomation": {
+        "title": "DevOps & Automation",
+        "description": "Efficient CI/CD pipelines and automated workflows"
+      },
+      "DataAnalyticsAI": {
+        "title": "Data Analytics & AI",
+        "description": "AI-driven insights for smarter business decisions"
+      },
+      "ManagedCloud": {
+        "title": "Managed Cloud",
+        "description": "24/7 cloud monitoring, maintenance, and support"
+      },
+      "CloudApps": {
+        "title": "Cloud Apps",
+        "description": "Custom cloud apps for performance and scalability"
+      },
+      "MultiCloudSolutions": {
+        "title": "Multi-Cloud Solutions",
+        "description": "Flexible cloud strategies for seamless integration"
+      }
+    }
+  },
+  "AwsSolutions": {
+    "seo": {
+      "title": "AWS Solutions - Orotecc",
+      "description": "Certified AWS consulting, migration, and optimization services from Orotecc."
+    }
+  }
+}

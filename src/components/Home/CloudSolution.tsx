@@ -1,33 +1,32 @@
 import React from "react";
 import Container from "../Container";
 import Image from "next/image";
-
-const solutionCards = [
-  {
-    title: "Optimize Operations",
-    description: "Leverage cloud technology for efficiency and cost savings",
-    icon: "/cloud.svg",
-  },
-  {
-    title: "Enhance Security",
-    description:
-      "Protect sensitive data with industry-leading security measures",
-    icon: "/icons/enhance.svg",
-  },
-  {
-    title: "Boost Performance",
-    description:
-      "Improve speed, scalability, and reliability with cloud-based solutions",
-    icon: "/icons/speedometer.svg",
-  },
-  {
-    title: "Enable Innovation",
-    description: "Utilize AI, automation, and analytics to stay ahead",
-    icon: "/icons/idea.svg",
-  },
-];
+import { useTranslations } from 'next-intl';
 
 const Cloud = () => {
+  const t = useTranslations('Home.CloudSolution');
+  const solutionCards = [
+    {
+      title: t('cards.0.title'),
+      description: t('cards.0.description'),
+      icon: "/cloud.svg",
+    },
+    {
+      title: t('cards.1.title'),
+      description: t('cards.1.description'),
+      icon: "/icons/enhance.svg",
+    },
+    {
+      title: t('cards.2.title'),
+      description: t('cards.2.description'),
+      icon: "/icons/speedometer.svg",
+    },
+    {
+      title: t('cards.3.title'),
+      description: t('cards.3.description'),
+      icon: "/icons/idea.svg",
+    },
+  ];
   return (
     <section className="py-16 sm:py-16 lg:pt-32 relative ">
       <div className="absolute min-h-[130vh] w-full -top-[15rem] -z-10">
@@ -42,10 +41,10 @@ const Cloud = () => {
       <Container className="relative z-10">
         <div className="text-center mb-6">
           <h2 className="text-[#764af1] text-base sm:text-xl font-bold tracking-[1.60px] mb-2 sm:mb-4 uppercase">
-            CLOUD SOLUTIONS FOR EVERY BUSINESS
+            {t('title')}
           </h2>
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#3b3f48] leading-tight">
-            Empower your business with seamless cloud transformation
+            {t('subtitle')}
           </h3>
         </div>
 
@@ -71,7 +70,7 @@ const Cloud = () => {
           <button
             className="bg-[#764af1] text-white rounded-[32px] px-6 py-4 font-semibold hover:bg-purple-800 transition-colors duration-300 ease-in-out cursor-pointer"
           >
-            Start Your Cloud Journey
+            {t('cta')}
           </button>
         </div>
       </Container>

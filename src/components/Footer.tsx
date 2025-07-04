@@ -4,6 +4,7 @@ import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useTranslations } from 'next-intl';
   
   // Footer links data
   interface FooterLinks {
@@ -12,44 +13,53 @@ import { usePathname } from "next/navigation";
     services: string[];
     resources: string[];
   }
-  const footerLinks: FooterLinks = {
-    company: ["Home", "About", 
-      // "Team", "Testimonials", "Careers", 
-      "Contact"],
-    services: [
-      "Cloud Infrastructure",
-      "Cloud Security",
-      "AWS Solutions",
-      "DevOps & Automation",
-      "Data Analytics & AI",
-      "Managed Cloud",
-      "Cloud Apps",
-      "Multi-Cloud Solutions",
-    ],
-    resources: [
-      // "Blog", "News and Events", "Support", "FAQ", 
-      "Sitemap"],
-  };
-  
-  const serviceLinkMap: { [key: string]: string } = {
-    "Cloud Infrastructure": "/services/cloud-infrastructure",
-    "Cloud Security": "/services/cloud-security",
-    "AWS Solutions": "/services/aws-solutions",
-    "DevOps & Automation": "/services/devops-automation",
-    "Data Analytics & AI": "/services/data-analytics-ai",
-    "Managed Cloud": "/services/managed-cloud",
-    "Cloud Apps": "/services/cloud-apps",
-    "Multi-Cloud Solutions": "/services/multi-cloud-solutions",
-  };
-  
-  const companyLinkMap: { [key: string]: string } = {
-    Home: '/',
-    About: '/about',
-    Contact: '/contact',
-  };
   
   export const Footer = () => {
     const pathname = usePathname();
+    const tCommon = useTranslations('Common');
+    const tFooter = useTranslations('Footer');
+    const tServices = useTranslations('Services');
+    const tContact = useTranslations('Contact');
+    const tSignin = useTranslations('Auth.Signin');
+
+    const footerLinks: FooterLinks = {
+      company: [tCommon('home'), tFooter('about'), tFooter('contact')],
+      services: [
+        tServices('cloudInfrastructure'),
+        tServices('cloudSecurity'),
+        tServices('awsSolutions'),
+        tServices('devOps'),
+        tServices('dataAnalytics'),
+        tServices('managedCloud'),
+        tServices('cloudApps'),
+        tServices('multiCloud'),
+      ],
+      resources: [tFooter('sitemap')],
+    };
+    
+    const serviceLinkMap: { [key: string]: string } = {
+      [tServices('cloudInfrastructure')]: "/services/cloud-infrastructure",
+      [tServices('cloudSecurity')]: "/services/cloud-security",
+      [tServices('awsSolutions')]: "/services/aws-solutions",
+      [tServices('devOps')]: "/services/devops-automation",
+      [tServices('dataAnalytics')]: "/services/data-analytics-ai",
+      [tServices('managedCloud')]: "/services/managed-cloud",
+      [tServices('cloudApps')]: "/services/cloud-apps",
+      [tServices('multiCloud')]: "/services/multi-cloud-solutions",
+    };
+    
+    const companyLinkMap: { [key: string]: string } = {
+      [tCommon('home')]: '/',
+      [tFooter('about')]: '/about',
+      [tFooter('contact')]: '/contact',
+    };
+
+    const footerCategoryLabels: Record<string, string> = {
+      company: tFooter('company'),
+      services: tFooter('services'),
+      resources: tFooter('resources'),
+    };
+
     return (
       <div className="relative overflow-hidden">
         {pathname !== "/free-consultation" && <Schedule />}
@@ -62,7 +72,7 @@ import { usePathname } from "next/navigation";
                 <div className="w-[221px] h-10">
                   <Image
                     className="w-[221px] h-10"
-                    alt="Orotecc Logo"
+                    alt={tFooter('logoAlt') || 'Orotecc Logo'}
                     src="https://c.animaapp.com/mbw3crr3UaRZYv/img/vector-41.svg"
                     width={221}
                     height={40}
@@ -70,28 +80,29 @@ import { usePathname } from "next/navigation";
                 </div>
   
                 <div className="flex gap-3 mt-8 md:mt-12">
-                  <Image src="/map-pin.svg" alt="Address" width={18} height={18} className="w-[18px] h-[18px]" />
+                  <Image src="/map-pin.svg" alt={tFooter('addressAlt') || 'Address'} width={18} height={18} className="w-[18px] h-[18px]" />
                   <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
-                    Al Manama Tower, Office 2313, Business Bay, Dubai
+                    {tContact('addressText')}
                   </span>
                 </div>
   
                 <div className="flex gap-3 mt-4">
-                  <Image src="/phone-call.svg" alt="Phone" width={18} height={18} className="w-[18px] h-[18px]" />
+                  <Image src="/phone-call.svg" alt={tFooter('phoneAlt') || 'Phone'} width={18} height={18} className="w-[18px] h-[18px]" />
+                  <Image src="/phone-call.svg" alt={tFooter('phoneAlt') || 'Phone'} width={18} height={18} className="w-[18px] h-[18px]" />
                   <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
                     +971 556677555
                   </span>
                 </div>
   
                 <div className="flex gap-3 mt-4">
-                  <Image src="/mail.svg" alt="Mail" width={18} height={18} className="w-[18px] h-[18px]" />
+                  <Image src="/mail.svg" alt={tFooter('mailAlt') || 'Mail'} width={18} height={18} className="w-[18px] h-[18px]" />
                   <span className="opacity-80 font-normal text-white text-base tracking-[0.80px] leading-[21.6px]">
                     info@orotecc.com
                   </span>
                 </div>
   
                 <div className="font-bold text-white text-base tracking-[0.80px] leading-[21.6px] mt-8 md:mt-12">
-                  JOIN OUR NETWORK
+                  {tFooter('social').toUpperCase()}
                 </div>
   
                 <div className="flex gap-3 mt-4">
@@ -113,7 +124,7 @@ import { usePathname } from "next/navigation";
                   className="flex flex-col items-center md:items-start text-center md:text-left"
                 >
                   <h3 className="font-bold text-white text-base tracking-[0.80px] leading-[21.6px] uppercase">
-                    {category}
+                    {footerCategoryLabels[category]}
                   </h3>
                   <div className="flex flex-col gap-3 mt-6 md:mt-10">
                     {footerLinks[category].map((link: string, linkIndex: number) => (
@@ -142,7 +153,7 @@ import { usePathname } from "next/navigation";
           <div className="flex flex-col md:flex-row w-full justify-between px-4 sm:px-6 lg:px-8 py-5 mt-10 md:mt-16 bg-[#0c1744] text-center md:text-left">
             <Container className="flex flex-col md:flex-row justify-between w-full ">
               <div className="font-normal text-white text-sm tracking-[0] leading-[18.9px] mb-4 md:mb-0">
-                © 2025 Orotecc. All rights reserved.
+                {tSignin('copyright')}
               </div>
   
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
@@ -150,7 +161,7 @@ import { usePathname } from "next/navigation";
                   href="#"
                   className="font-normal text-white text-sm tracking-[0] leading-[18.9px] hover:text-[#764af1] transition-colors"
                 >
-                  Terms &amp; Conditions
+                  {tFooter('terms')}
                 </a>
                 <span className="hidden sm:inline-block font-normal text-white text-sm tracking-[0] leading-[18.9px]">
                   |
@@ -159,7 +170,7 @@ import { usePathname } from "next/navigation";
                   href="#"
                   className="font-normal text-white text-sm tracking-[0] leading-[18.9px] hover:text-[#764af1] transition-colors"
                 >
-                  Disclaimer
+                  {tFooter('disclaimer')}
                 </a>
                 <span className="hidden sm:inline-block font-normal text-white text-sm tracking-[0] leading-[18.9px]">
                   |
@@ -168,7 +179,7 @@ import { usePathname } from "next/navigation";
                   href="#"
                   className="font-normal text-white text-sm tracking-[0] leading-[18.9px] hover:text-[#764af1] transition-colors"
                 >
-                  Privacy Policy
+                  {tFooter('privacy')}
                 </a>
               </div>
             </Container>
