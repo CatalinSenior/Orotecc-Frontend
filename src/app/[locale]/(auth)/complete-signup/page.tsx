@@ -10,7 +10,6 @@ import Step4VerifyIdentityPhone from "./steps/Step4VerifyIdentityPhone";
 import Step5OtpCode from "./steps/Step5OtpCode";
 import Step6Welcome from "./steps/Step6Welcome";
 
-// Static Slider Component (copied from signup)
 const slideData = [
   {
     id: 3,
@@ -84,7 +83,7 @@ const CompleteSignUp = () => {
         </div>
       </div>
     ) : (
-      <div className="grid grid-cols-2 min-h-screen w-full">
+      <main className="grid grid-cols-2 min-h-screen w-full" style={{ direction: 'ltr' }}>
         <div className="text-white hidden md:flex flex-col pt-[50%] items-center relative overflow-hidden bg-gradient-to-br from-[#6a4cff] to-[#5739d6]">
           <div className="relative z-10 mx-auto">
             <div className="max-w-[414px]">
@@ -197,7 +196,7 @@ const CompleteSignUp = () => {
             © 2025 Orotecc Web Services or its affiliates. All rights reserved.
           </p>
         </div>
-      </div>
+      </main>
     )
   );
 };

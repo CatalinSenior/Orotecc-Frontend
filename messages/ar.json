@@ -20,7 +20,19 @@
       "or": "أو",
       "signIn": "تسجيل الدخول",
       "signInTitle": "تسجيل الدخول إلى حسابك",
-      "createAccount": "إنشاء حساب"
+      "createAccount": "إنشاء حساب",
+      "confirmIdentity": "تأكيد هويتك",
+      "securityMessage": "نحرص على أمانك - هذا ما نقوم به.",
+      "sentEmailWithCode": "لقد أرسلنا رسالة بريد إلكتروني تحتوي على رمز التحقق إلى",
+      "notYou": "(ليس أنت؟)",
+      "enterCodeToConfirm": "أدخل الرمز أدناه لتأكيد بريدك الإلكتروني.",
+      "verificationCodeLabel": "رمز التحقق",
+      "verificationCodePlaceholder": "أدخل رمز مكون من 6 أرقام",
+      "verify": "تحقق",
+      "resendCode": "إعادة إرسال الرمز",
+      "didntGetCode": "لم يصلك الرمز؟",
+      "codesCanTakeTime": "قد يستغرق وصول الرموز حتى 5 دقائق.",
+      "checkSpam": "تحقق من مجلد الرسائل غير المرغوب فيها."
     },
     "Signin": {
       "seo": { "title": "تسجيل الدخول - Orotecc", "description": "سجّل الدخول إلى حسابك في Orotecc للوصول إلى لوحة التحكم السحابية." },
@@ -80,8 +92,30 @@
       },
       "Step3Billing": {
         "title": "معلومات الفوترة",
+        "billingInfoTitle": "معلومات الفوترة",
+        "billingCountryLabel": "بلد الفوترة",
+        "billingCountryHelp": "يحدد بلد الفوترة طرق الدفع المتاحة لك لدفع خدمات AWS.",
+        "country": {
+          "AE": "الإمارات العربية المتحدة",
+          "US": "الولايات المتحدة",
+          "GB": "المملكة المتحدة",
+          "IN": "الهند"
+        },
+        "selectCountryPlaceholder": "اختر دولة",
+        "cardNumberLabel": "رقم بطاقة الائتمان أو الخصم",
+        "cardNumberHelp": "تقبل Orotecc معظم بطاقات الائتمان والخصم الرئيسية. لمعرفة المزيد عن خيارات الدفع، راجع الأسئلة الشائعة.",
+        "expDateLabel": "تاريخ الانتهاء",
+        "monthPlaceholder": "شهر",
+        "yearPlaceholder": "سنة",
+        "securityCodeLabel": "رمز الأمان",
+        "securityCodePlaceholder": "CVV/CVC",
+        "cardholderNameLabel": "اسم حامل البطاقة",
+        "billingAddressLabel": "عنوان الفوترة",
         "useContactAddress": "استخدم عنوان الاتصال الخاص بي",
-        "verifyContinue": "تحقق واستمر (الخطوة 3 من 5)"
+        "contactAddress": "برج المنارة، مكتب 2313<br />الخليج التجاري، دبي",
+        "useNewAddress": "استخدم عنوانًا جديدًا",
+        "verifyContinue": "تحقق واستمر (الخطوة 3 من 5)",
+        "bankRedirectNote": "قد يتم توجيهك إلى موقع البنك الخاص بك لتفويض عملية التحقق."
       },
       "Step4VerifyIdentityPhone": {
         "title": "تحقق من هويتك",
@@ -264,7 +298,6 @@
   "Services": {
     "title": "خدماتنا",
     "subtitle": "حلول سحابية شاملة لعملك",
-    "cloudInfrastructure": "البنية التحتية السحابية",
     "cloudInfrastructureDesc": "حلول بنية تحتية سحابية قابلة للتطوير وآمنة",
     "cloudSecurity": "الأمان السحابي",
     "cloudSecurityDesc": "حلول أمان متقدمة لحماية بياناتك",
@@ -280,7 +313,7 @@
     "awsSolutionsDesc": "حلول واستشارات AWS معتمدة",
     "cloudApps": "التطبيقات السحابية",
     "cloudAppsDesc": "تطبيقات سحابية مخصصة وحلول SaaS",
-    "CloudInfrastructure": {
+    "cloudInfrastructure": {
       "heroTitle": "البنية التحتية السحابية",
       "heroSubtitle": "أساسيات قابلة للتطوير وعالية الأداء للأنظمة الرقمية الحديثة",
       "bannerAlt": "لافتة البنية التحتية السحابية",
@@ -602,8 +635,30 @@
   },
   "Step3Billing": {
     "title": "معلومات الفوترة",
+    "billingInfoTitle": "معلومات الفوترة",
+    "billingCountryLabel": "بلد الفوترة",
+    "billingCountryHelp": "يحدد بلد الفوترة طرق الدفع المتاحة لك لدفع خدمات AWS.",
+    "country": {
+      "AE": "الإمارات العربية المتحدة",
+      "US": "الولايات المتحدة",
+      "GB": "المملكة المتحدة",
+      "IN": "الهند"
+    },
+    "selectCountryPlaceholder": "اختر دولة",
+    "cardNumberLabel": "رقم بطاقة الائتمان أو الخصم",
+    "cardNumberHelp": "تقبل Orotecc معظم بطاقات الائتمان والخصم الرئيسية. لمعرفة المزيد عن خيارات الدفع، راجع الأسئلة الشائعة.",
+    "expDateLabel": "تاريخ الانتهاء",
+    "monthPlaceholder": "شهر",
+    "yearPlaceholder": "سنة",
+    "securityCodeLabel": "رمز الأمان",
+    "securityCodePlaceholder": "CVV/CVC",
+    "cardholderNameLabel": "اسم حامل البطاقة",
+    "billingAddressLabel": "عنوان الفوترة",
     "useContactAddress": "استخدم عنوان الاتصال الخاص بي",
-    "verifyContinue": "تحقق وتابع (الخطوة 3 من 5)"
+    "contactAddress": "برج المنارة، مكتب 2313<br />الخليج التجاري، دبي",
+    "useNewAddress": "استخدم عنوانًا جديدًا",
+    "verifyContinue": "تحقق واستمر (الخطوة 3 من 5)",
+    "bankRedirectNote": "قد يتم توجيهك إلى موقع البنك الخاص بك لتفويض عملية التحقق."
   },
   "Step4VerifyIdentityPhone": {
     "title": "تحقق من هويتك",

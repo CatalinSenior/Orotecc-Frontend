@@ -44,7 +44,7 @@ function ContactPage() {
   };
 
   return (
-    <main>
+    <main className="ltr" style={{ direction: 'ltr' }}>
       <Hero
         title={t('heroTitle')}
         subtitle={t('heroSubtitle')}

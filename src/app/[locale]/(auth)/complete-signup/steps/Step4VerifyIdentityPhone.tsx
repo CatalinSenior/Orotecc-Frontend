@@ -12,7 +12,7 @@ interface Step4VerifyIdentityPhoneProps {
 }
 
 const Step4VerifyIdentityPhone = ({ control, onSubmit }: Step4VerifyIdentityPhoneProps) => {
-  const t = useTranslations('CompleteSignup.Step4VerifyIdentityPhone');
+  const t = useTranslations('Auth.CompleteSignup.Step4VerifyIdentityPhone');
   const [method, setMethod] = React.useState<string>("sms");
 
   return (

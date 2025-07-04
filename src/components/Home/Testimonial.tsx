@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Container from "../Container";
-// import Quote from "/icons/quote.svg"
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
@@ -56,7 +55,6 @@ const Testimonial = () => {
     },
   ];
 
-  // Placeholder for Star SVG icon
   const StarIcon = () => (
     <svg
       width="14"

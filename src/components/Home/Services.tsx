@@ -6,7 +6,6 @@ import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
-// import ArrowDown from "@arrow-icon.svg"
 
 const Services = () => {
   const t = useTranslations('Services');

@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 export const AboutOroteccSection = () => {
   const t = useTranslations('About');
   return (
-    <Container className="py-16">
+    <Container className="py-16" style={{ direction: 'ltr' }}>
       <div className="relative">
         {/* Image container */}
         <div className="lg:w-[800px]">

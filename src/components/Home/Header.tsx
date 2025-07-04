@@ -94,42 +94,6 @@ function ServicesFlyout() {
   );
 }
 
-// const SolutionsFlyout = () => (
-//   <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
-//     <div className="grid grid-cols-1 gap-2">
-//       {solutions.map((solution, idx) => (
-//         <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
-//           <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
-//             <Image src={solution.icon} alt={solution.title + ' icon'} width={18} height={18} />
-//           </div>
-//           <div>
-//             <div className="font-semibold text-[#3b3f48] text-base leading-tight">{solution.title}</div>
-//             <div className="text-sm text-[#686e7b] mt-1 leading-snug">{solution.description}</div>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   </div>
-// );
-
-// const ResourcesFlyout = () => (
-//   <div className="p-4 min-w-[400px] bg-white rounded-xl shadow-xl">
-//     <div className="grid grid-cols-1 gap-2">
-//       {resources.map((resource, idx) => (
-//         <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#f6f5fe] transition-colors cursor-pointer">
-//           <div className="flex-shrink-0 size-[18px] flex items-center justify-center bg-[#f6f5fe] rounded-full">
-//             <Image src={resource.icon} alt={resource.title + ' icon'} width={18} height={18} />
-//           </div>
-//           <div>
-//             <div className="font-semibold text-[#3b3f48] text-base leading-tight">{resource.title}</div>
-//             <div className="text-sm text-[#686e7b] mt-1 leading-snug">{resource.description}</div>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   </div>
-// );
-
 export const Header = () => {
   const t = useTranslations('Header');
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -275,8 +239,6 @@ export const Header = () => {
                             >
                               <div className="py-2">
                                 {link.name === "Services" && <ServicesFlyout />}
-                                {/* {link.name === "Solutions" && <SolutionsFlyout />}
-                                {link.name === "Resources" && <ResourcesFlyout />} */}
                               </div>
                             </motion.div>
                           )}

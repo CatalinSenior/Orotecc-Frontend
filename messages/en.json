@@ -7,7 +7,10 @@
   },
   "Auth": {
     "Signup": {
-      "seo": { "title": "Sign Up - Orotecc", "description": "Create your Orotecc account and start your cloud journey." },
+      "seo": {
+        "title": "Sign Up - Orotecc",
+        "description": "Create your Orotecc account and start your cloud journey."
+      },
       "exploreFreeTier": "Explore free Tier products with a new Orotecc account.",
       "learnMore": "To learn more, visit",
       "signUpTitle": "Create your Orotecc account",
@@ -20,10 +23,25 @@
       "or": "or",
       "signIn": "Sign in",
       "signInTitle": "Sign in to your account",
-      "createAccount": "Create an account"
+      "createAccount": "Create an account",
+      "confirmIdentity": "Confirm that it's you",
+      "securityMessage": "Making sure you are secure - it's what we do.",
+      "sentEmailWithCode": "We sent an email with a verification code to",
+      "notYou": "(not you?)",
+      "enterCodeToConfirm": "Enter it below to confirm your email.",
+      "verificationCodeLabel": "Verification Code",
+      "verificationCodePlaceholder": "Enter 6-digit code",
+      "verify": "Verify",
+      "resendCode": "Resend Code",
+      "didntGetCode": "Didn't get the code?",
+      "codesCanTakeTime": "Codes can take up to 5 minutes to arrive.",
+      "checkSpam": "Check your spam folder."
     },
     "Signin": {
-      "seo": { "title": "Sign In - Orotecc", "description": "Sign in to your Orotecc account to access your cloud dashboard." },
+      "seo": {
+        "title": "Sign In - Orotecc",
+        "description": "Sign in to your Orotecc account to access your cloud dashboard."
+      },
       "exploreFreeTier": "Explore free Tier products with a new Orotecc account.",
       "learnMore": "To learn more, visit",
       "signInTitle": "Sign in to your account",
@@ -42,7 +60,10 @@
       "copyright": "© 2025 Orotecc Web Services or its affiliates. All rights reserved."
     },
     "CompleteSignup": {
-      "seo": { "title": "Complete Signup - Orotecc", "description": "Finish setting up your Orotecc account in a few easy steps." },
+      "seo": {
+        "title": "Complete Signup - Orotecc",
+        "description": "Finish setting up your Orotecc account in a few easy steps."
+      },
       "Step1SetPassword": {
         "signUpTitle": "Create your Orotecc account",
         "createPasswordTitle": "Create your password",
@@ -80,8 +101,30 @@
       },
       "Step3Billing": {
         "title": "Billing Information",
+        "billingInfoTitle": "Billing Information",
+        "billingCountryLabel": "Billing country",
+        "billingCountryHelp": "Your billing country determines the payment methods available to you to pay for AWS services.",
+        "country": {
+          "AE": "United Arab Emirates",
+          "US": "United States",
+          "GB": "United Kingdom",
+          "IN": "India"
+        },
+        "selectCountryPlaceholder": "Select a country",
+        "cardNumberLabel": "Credit or Debit card number",
+        "cardNumberHelp": "Orotecc accepts most major credit and debit cards. To learn more about payment options, review our FAQ.",
+        "expDateLabel": "Expiration date",
+        "monthPlaceholder": "Month",
+        "yearPlaceholder": "Year",
+        "securityCodeLabel": "Security Code",
+        "securityCodePlaceholder": "CVV/CVC",
+        "cardholderNameLabel": "Cardholder's Name",
+        "billingAddressLabel": "Billing Address",
         "useContactAddress": "Use my contact address",
-        "verifyContinue": "Verify and continue (step 3 of 5)"
+        "contactAddress": "Al Manera Tower, Office 2313<br />Business Bay, Dubai",
+        "useNewAddress": "Use a new address",
+        "verifyContinue": "Verify and continue (step 3 of 5)",
+        "bankRedirectNote": "You might be redirected to your bank's website to authorize the verification charge."
       },
       "Step4VerifyIdentityPhone": {
         "title": "Verify Your Identity",
@@ -264,7 +307,6 @@
   "Services": {
     "title": "Our Services",
     "subtitle": "Comprehensive cloud solutions for your business",
-    "cloudInfrastructure": "Cloud Infrastructure",
     "cloudInfrastructureDesc": "Scalable and secure cloud infrastructure solutions",
     "cloudSecurity": "Cloud Security",
     "cloudSecurityDesc": "Advanced security solutions to protect your data",
@@ -280,6 +322,59 @@
     "awsSolutionsDesc": "Certified AWS solutions and consulting",
     "cloudApps": "Cloud Applications",
     "cloudAppsDesc": "Custom cloud applications and SaaS solutions",
+    "cloudInfrastructure": {
+      "heroTitle": "Cloud Infrastructure",
+      "heroSubtitle": "Scalable, high-performance foundations for modern digital systems",
+      "bannerAlt": "Cloud Infrastructure Banner",
+      "whatIsTitle": "What is Cloud Infrastructure?",
+      "whatIsDesc": "Cloud infrastructure provides computing, storage, and networking capabilities over the internet. It replaces traditional systems with flexible, on-demand scalable resources.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/services-page/machine.png",
+          "title": "Virtual Machines & Compute Resources",
+          "description": "Deploy scalable virtual servers based on your application needs."
+        },
+        {
+          "icon": "/services-page/storage.png",
+          "title": "Cloud Storage Solutions",
+          "description": "Store and access data with high performance and reliability."
+        },
+        {
+          "icon": "/services-page/load.png",
+          "title": "Network Engineering & Load Balancing",
+          "description": "Design reliable cloud networks and intelligently distribute traffic."
+        },
+        {
+          "icon": "/services-page/code.png",
+          "title": "Infrastructure as Code (IaC)",
+          "description": "Automate setup and configuration using tools like Terraform."
+        }
+      ],
+      "useCasesTitle": "Use Cases",
+      "useCases": [
+        {
+          "title": "SaaS Company Deployment",
+          "description": "A startup launching its platform using scalable cloud infrastructure to ensure high performance and rapid growth."
+        },
+        {
+          "title": "Legacy System Modernization",
+          "description": "A large enterprise migrates legacy applications to a modern cloud environment to reduce costs and improve reliability."
+        },
+        {
+          "title": "Event-Based Scaling",
+          "description": "An online ticketing platform uses cloud auto-scaling to handle demand spikes during events."
+        },
+        {
+          "title": "Disaster Recovery Architecture",
+          "description": "A financial institution establishes a cloud-based recovery environment to ensure business continuity."
+        }
+      ],
+      "seo": {
+        "title": "Cloud Infrastructure Services - Orotecc",
+        "description": "Scalable and secure cloud infrastructure for modern businesses. Explore our cloud infrastructure solutions."
+      }
+    },
     "AwsSolutions": {
       "heroTitle": "AWS Solutions",
       "heroSubtitle": "End-to-end AWS expertise for growth, migration, and optimization",
@@ -331,6 +426,324 @@
       "seo": {
         "title": "AWS Solutions - Orotecc",
         "description": "Certified AWS consulting, migration, and optimization services from Orotecc."
+      }
+    },
+    "DataAnalyticsAI": {
+      "heroTitle": "Data Analytics & AI",
+      "heroSubtitle": "Unlock insights and make smarter decisions with AI-driven data",
+      "bannerAlt": "Data Analytics & AI Banner",
+      "whatIsTitle": "What is Data Analytics & AI?",
+      "whatIsDesc": "Data Analytics & AI helps businesses convert raw data into insights using machine learning, predictive models, and real-time analytics. It powers decisions, automation, and personalized customer experiences.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/data-analytics-page/data.png",
+          "title": "Data Lakes & Warehousing",
+          "description": "Centralize structured and unstructured data for analytics at scale."
+        },
+        {
+          "icon": "/data-analytics-page/model.png",
+          "title": "Machine Learning & Model Training",
+          "description": "Develop predictive models to solve real-world business challenges."
+        },
+        {
+          "icon": "/data-analytics-page/predictive.png",
+          "title": "Predictive & Prescriptive Analytics",
+          "description": "Anticipate trends and recommend actions using advanced analytics."
+        },
+        {
+          "icon": "/data-analytics-page/ai.png",
+          "title": "AI Chatbots & NLP Applications",
+          "description": "Build conversational bots and intelligent assistants with NLP."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "Customer Behavior Prediction",
+          "description": "A retail chain uses machine learning to identify customer preferences and predict purchases. This informs personalized campaigns and boosts sales."
+        },
+        {
+          "title": "Real-Time Fraud Detection",
+          "description": "A digital bank uses AI to monitor transactions in real-time. Suspicious patterns are flagged instantly, and automated workflows freeze accounts to prevent fraud."
+        },
+        {
+          "title": "Operational Dashboards",
+          "description": "A logistics firm aggregates GPS and IoT data into dashboards for real-time fleet tracking, improving delivery performance and route efficiency."
+        },
+        {
+          "title": "AI Chatbot for Support",
+          "description": "A tech platform deploys an NLP-powered chatbot for 24/7 customer support, handling 60% of queries and reducing ticket resolution time significantly."
+        }
+      ],
+      "seo": {
+        "title": "Data Analytics & AI Services - Orotecc",
+        "description": "Unlock insights and drive smarter decisions with Orotecc's data analytics and AI solutions."
+      }
+    },
+    "CloudApps": {
+      "heroTitle": "Cloud Apps",
+      "heroSubtitle": "Purpose-built applications designed for speed, scale, and performance",
+      "bannerAlt": "Cloud Apps Banner",
+      "whatIsTitle": "What is Cloud Apps?",
+      "whatIsDesc": "Cloud apps are built for the cloud from day one. They're scalable, secure, and accessible from anywhere. We develop custom cloud-native apps tailored to business goals, powered by APIs, microservices, and modern UX.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/cloud-app-page/cloud-native.png",
+          "title": "Cloud-Native App Development",
+          "description": "Build robust applications optimized for cloud performance."
+        },
+        {
+          "icon": "/cloud-app-page/saas.png",
+          "title": "SaaS Product Engineering",
+          "description": "Develop scalable, subscription-based software platforms."
+        },
+        {
+          "icon": "/cloud-app-page/microservices.png",
+          "title": "Microservices Architecture",
+          "description": "Create flexible, decoupled services for modern app delivery."
+        },
+        {
+          "icon": "/cloud-app-page/api-design.png",
+          "title": "API Design & Integration",
+          "description": "Connect systems and services with secure, well-structured APIs."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "Custom CRM on Cloud",
+          "description": "A B2B company replaces spreadsheets with a tailored CRM application, built on cloud-native architecture with real-time collaboration and mobile support."
+        },
+        {
+          "title": "SaaS Product Development",
+          "description": "A startup launches a cloud-based task management app with subscription billing, multi-user access, and seamless scalability."
+        },
+        {
+          "title": "Internal Business Tools",
+          "description": "A manufacturing company digitizes production tracking and team coordination via internal cloud apps integrated with their ERP."
+        },
+        {
+          "title": "Hybrid App Backend",
+          "description": "A company building a mobile platform hosts the backend in the cloud using Firebase and custom APIs, enabling real-time user sync and fast content delivery."
+        }
+      ],
+      "seo": {
+        "title": "Cloud Apps & SaaS Solutions - Orotecc",
+        "description": "Custom cloud applications and SaaS solutions for performance and scalability."
+      }
+    },
+    "CloudSecurity": {
+      "heroTitle": "Cloud Security",
+      "heroSubtitle": "Advanced security strategies for a cloud-first world",
+      "bannerAlt": "Cloud Security Banner",
+      "whatIsTitle": "What is Cloud Security?",
+      "whatIsDesc": "Cloud security comprises technologies and best practices that protect cloud infrastructure, applications, and data. It involves identity control, encryption, threat detection, compliance, and real-time protection from evolving cyber threats.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/cloud-security-page/identity.png",
+          "title": "Identity & Access Management (IAM)",
+          "description": "Define and enforce secure access policies for users and apps."
+        },
+        {
+          "icon": "/cloud-security-page/transit.png",
+          "title": "Encryption at Rest and In Transit",
+          "description": "Protect sensitive data with end-to-end encryption mechanisms."
+        },
+        {
+          "icon": "/cloud-security-page/threat.png",
+          "title": "Threat Monitoring and Response",
+          "description": "Detect and respond to threats in real time using intelligent tools."
+        },
+        {
+          "icon": "/cloud-security-page/thrust.png",
+          "title": "Zero Trust Architecture",
+          "description": "Secure your network with continuous verification and segmentation."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "Regulatory Compliance for Healthcare",
+          "description": "A health-tech firm secures patient records by enforcing role-based access, encrypting data at rest and in transit, and implementing logging and auditing for HIPAA compliance."
+        },
+        {
+          "title": "Zero Trust Architecture for Remote Teams",
+          "description": "A distributed organization rolls out a zero-trust framework to secure access to critical systems. Every user and device is verified before access, reducing insider threats."
+        },
+        {
+          "title": "Threat Detection and Response",
+          "description": "A retail company integrates cloud-native SIEM tools to detect anomalous login behavior and unauthorized access attempts. Automated alerts and responses minimize breach risk."
+        },
+        {
+          "title": "Secure Cloud Migration",
+          "description": "A logistics provider transitions to the cloud with end-to-end encryption and identity controls, ensuring a secure environment during and after migration."
+        }
+      ],
+      "seo": {
+        "title": "Cloud Security Services - Orotecc",
+        "description": "Protect your data and applications with Orotecc's advanced cloud security solutions."
+      }
+    },
+    "DevOpsAutomation": {
+      "heroTitle": "DevOps & Automation",
+      "heroSubtitle": "Streamlined workflows and faster delivery through smart automation",
+      "bannerAlt": "DevOps & Automation Banner",
+      "whatIsTitle": "What is DevOps & Automation?",
+      "whatIsDesc": "DevOps integrates software development and IT operations, emphasizing automation, collaboration, and continuous delivery. By automating code integration, testing, and deployment, teams release faster with fewer errors.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/devops-automation-page/pipeline.png",
+          "title": "CI/CD Pipeline Implementation",
+          "description": "Enable faster, reliable releases through continuous integration and delivery."
+        },
+        {
+          "icon": "/devops-automation-page/infrastructure.png",
+          "title": "Infrastructure Automation",
+          "description": "Manage infrastructure at scale with declarative automation tools."
+        },
+        {
+          "icon": "/devops-automation-page/monitoring.png",
+          "title": "Monitoring & Alerting",
+          "description": "Track system health and respond quickly with real-time insights."
+        },
+        {
+          "icon": "/devops-automation-page/container.png",
+          "title": "Container Orchestration",
+          "description": "Package and manage applications across environments seamlessly."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "CI/CD For FinTech App",
+          "description": "A FinTech startup uses GitHub Actions and Docker containers to build, test, and deploy updates multiple times a day, reducing release cycles from weeks to hours."
+        },
+        {
+          "title": "Infrastructure Automation for Agencies",
+          "description": "A digital agency automates infrastructure setup for multiple clients using Terraform and Ansible, eliminating manual errors and reducing provisioning time by 80%."
+        },
+        {
+          "title": "Blue/Green Deployments",
+          "description": "A telecom company implements blue/green deployment to release new versions with zero downtime and instant rollback options in case of issues."
+        },
+        {
+          "title": "Automated Testing & QA",
+          "description": "A gaming company integrates automated testing in its CI pipeline. Every code change triggers end-to-end tests, cutting QA overhead and improving release confidence."
+        }
+      ],
+      "seo": {
+        "title": "DevOps & Automation Services - Orotecc",
+        "description": "Streamline your development and deployment with Orotecc's DevOps and automation services."
+      }
+    },
+    "ManagedCloud": {
+      "heroTitle": "Managed Cloud",
+      "heroSubtitle": "Reliable cloud operations — monitored, maintained, and supported",
+      "bannerAlt": "Managed Cloud Banner",
+      "whatIsTitle": "What is Managed Cloud?",
+      "whatIsDesc": "Managed cloud services provide full operational support for your cloud infrastructure, including monitoring, updates, backups, and cost optimization, so your team can focus on innovation.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/managed-cloud-page/cloud.png",
+          "title": "24/7 Cloud Monitoring & Alerts",
+          "description": "Proactive system monitoring with instant alerts and resolution."
+        },
+        {
+          "icon": "/managed-cloud-page/security.png",
+          "title": "Security Updates & Patch Management",
+          "description": "Keep systems secure and up-to-date automatically."
+        },
+        {
+          "icon": "/managed-cloud-page/performance.png",
+          "title": "Performance Optimization",
+          "description": "Fine-tune cloud environments for speed, efficiency, and reliability."
+        },
+        {
+          "icon": "/managed-cloud-page/recovery.png",
+          "title": "Disaster Recovery Management",
+          "description": "Ensure business continuity with backup and failover solutions."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "24/7 Monitoring for SaaS App",
+          "description": "A SaaS company offloads monitoring and incident response to a managed provider, ensuring fast issue resolution and 99.99% uptime."
+        },
+        {
+          "title": "MSP Support for Multi-Cloud Environments",
+          "description": "An enterprise spans AWS and Azure. A managed provider handles health checks, logging, and cross-platform policy enforcement."
+        },
+        {
+          "title": "Monthly Cost Reporting & Governance",
+          "description": "A nonprofit receives monthly usage analytics and cost reports, helping them stay within grant budgets while maintaining performance."
+        },
+        {
+          "title": "Proactive Maintenance & Scaling",
+          "description": "An EdTech platform experiences seasonal spikes. The managed cloud team proactively scales resources and pre-tunes performance for traffic surges."
+        }
+      ],
+      "seo": {
+        "title": "Managed Cloud Services - Orotecc",
+        "description": "24/7 managed cloud operations, monitoring, and support from Orotecc."
+      }
+    },
+    "MultiCloudSolutions": {
+      "heroTitle": "Multi-Cloud Solutions",
+      "heroSubtitle": "Smart strategies for resilient, flexible cloud deployments",
+      "bannerAlt": "Multi-Cloud Solutions Banner",
+      "whatIsTitle": "What is Multi-Cloud Solutions?",
+      "whatIsDesc": "Multi-cloud refers to using services from multiple cloud providers to increase reliability, avoid vendor lock-in, and ensure compliance. We help architect, deploy, and manage integrated multi-cloud environments.",
+      "keyComponentsTitle": "Key Service Components",
+      "keyComponents": [
+        {
+          "icon": "/multi-cloud/cross.png",
+          "title": "Cross-Cloud Strategy & Integration",
+          "description": "Architect solutions that leverage multiple cloud providers effectively."
+        },
+        {
+          "icon": "/multi-cloud/data.png",
+          "title": "Data Synchronization Across Clouds",
+          "description": "Keep data consistent across AWS, Azure, GCP, and others."
+        },
+        {
+          "icon": "/multi-cloud/compliance.png",
+          "title": "Compliance-Driven Deployments",
+          "description": "Align cloud usage with local laws and industry regulations."
+        },
+        {
+          "icon": "/multi-cloud/recovery.png",
+          "title": "Disaster Recovery & Failover",
+          "description": "Ensure resilience with cloud-to-cloud replication and failover."
+        }
+      ],
+      "useCasesTitle": "Use cases",
+      "useCases": [
+        {
+          "title": "Avoiding Vendor Lock-in",
+          "description": "A tech firm runs front-end services on AWS while hosting analytics on GCP, gaining flexibility and leveraging the strengths of each provider."
+        },
+        {
+          "title": "Compliance-Driven Strategy",
+          "description": "A multinational corporation stores customer data on region-specific clouds (Azure in the EU, AWS in the US) to meet data residency laws."
+        },
+        {
+          "title": "Cross-Cloud Data Syncing",
+          "description": "A fintech startup syncs customer data between GCP (analytics) and AWS (app logic) to optimize both cost and performance."
+        },
+        {
+          "title": "High Availability Architecture",
+          "description": "A media company uses Azure and AWS in parallel, with auto-failover systems ensuring zero downtime even if one provider goes down."
+        }
+      ],
+      "seo": {
+        "title": "Multi-Cloud Solutions - Orotecc",
+        "description": "Flexible, resilient multi-cloud strategies and integration from Orotecc."
       }
     }
   },
@@ -456,8 +869,30 @@
   },
   "Step3Billing": {
     "title": "Billing Information",
+    "billingInfoTitle": "Billing Information",
+    "billingCountryLabel": "Billing country",
+    "billingCountryHelp": "Your billing country determines the payment methods available to you to pay for AWS services.",
+    "country": {
+      "AE": "United Arab Emirates",
+      "US": "United States",
+      "GB": "United Kingdom",
+      "IN": "India"
+    },
+    "selectCountryPlaceholder": "Select a country",
+    "cardNumberLabel": "Credit or Debit card number",
+    "cardNumberHelp": "Orotecc accepts most major credit and debit cards. To learn more about payment options, review our FAQ.",
+    "expDateLabel": "Expiration date",
+    "monthPlaceholder": "Month",
+    "yearPlaceholder": "Year",
+    "securityCodeLabel": "Security Code",
+    "securityCodePlaceholder": "CVV/CVC",
+    "cardholderNameLabel": "Cardholder's Name",
+    "billingAddressLabel": "Billing Address",
     "useContactAddress": "Use my contact address",
-    "verifyContinue": "Verify and continue (step 3 of 5)"
+    "contactAddress": "Al Manera Tower, Office 2313<br />Business Bay, Dubai",
+    "useNewAddress": "Use a new address",
+    "verifyContinue": "Verify and continue (step 3 of 5)",
+    "bankRedirectNote": "You might be redirected to your bank's website to authorize the verification charge."
   },
   "Step4VerifyIdentityPhone": {
     "title": "Verify Your Identity",
@@ -497,7 +932,7 @@
     "title": "AWS PARTNER",
     "subtitle": "AWS Consulting Competencies"
   },
-   "CloudSolution": {
+  "CloudSolution": {
     "title": "CLOUD SOLUTIONS FOR EVERY BUSINESS",
     "subtitle": "Empower your business with seamless cloud transformation",
     "cta": "Start Your Cloud Journey",
@@ -505,7 +940,7 @@
       {
         "title": "Optimize Operations",
         "description": "Leverage cloud technology for efficiency and cost savings"
-  },
+      },
       {
         "title": "Enhance Security",
         "description": "Protect sensitive data with industry-leading security measures"
@@ -598,324 +1033,6 @@
     "seo": {
       "title": "Cloud Infrastructure Services - Orotecc",
       "description": "Scalable, secure cloud infrastructure for modern businesses. Learn about our cloud infrastructure solutions."
-    }
-  },
-  "CloudSecurity": {
-    "heroTitle": "Cloud Security",
-    "heroSubtitle": "Advanced security strategies for a cloud-first world",
-    "bannerAlt": "Cloud Security Banner",
-    "whatIsTitle": "What is Cloud Security?",
-    "whatIsDesc": "Cloud security comprises technologies and best practices that protect cloud infrastructure, applications, and data. It involves identity control, encryption, threat detection, compliance, and real-time protection from evolving cyber threats.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/cloud-security-page/identity.png",
-        "title": "Identity & Access Management (IAM)",
-        "description": "Define and enforce secure access policies for users and apps."
-      },
-      {
-        "icon": "/cloud-security-page/transit.png",
-        "title": "Encryption at Rest and In Transit",
-        "description": "Protect sensitive data with end-to-end encryption mechanisms."
-      },
-      {
-        "icon": "/cloud-security-page/threat.png",
-        "title": "Threat Monitoring and Response",
-        "description": "Detect and respond to threats in real time using intelligent tools."
-      },
-      {
-        "icon": "/cloud-security-page/thrust.png",
-        "title": "Zero Trust Architecture",
-        "description": "Secure your network with continuous verification and segmentation."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "Regulatory Compliance for Healthcare",
-        "description": "A health-tech firm secures patient records by enforcing role-based access, encrypting data at rest and in transit, and implementing logging and auditing for HIPAA compliance."
-      },
-      {
-        "title": "Zero Trust Architecture for Remote Teams",
-        "description": "A distributed organization rolls out a zero-trust framework to secure access to critical systems. Every user and device is verified before access, reducing insider threats."
-      },
-      {
-        "title": "Threat Detection and Response",
-        "description": "A retail company integrates cloud-native SIEM tools to detect anomalous login behavior and unauthorized access attempts. Automated alerts and responses minimize breach risk."
-      },
-      {
-        "title": "Secure Cloud Migration",
-        "description": "A logistics provider transitions to the cloud with end-to-end encryption and identity controls, ensuring a secure environment during and after migration."
-      }
-    ],
-    "seo": {
-      "title": "Cloud Security Services - Orotecc",
-      "description": "Protect your data and applications with Orotecc's advanced cloud security solutions."
-    }
-  },
-  "DataAnalyticsAI": {
-    "heroTitle": "Data Analytics & AI",
-    "heroSubtitle": "Unlock insights and make smarter decisions with AI-driven data",
-    "bannerAlt": "Data Analytics & AI Banner",
-    "whatIsTitle": "What is Data Analytics & AI?",
-    "whatIsDesc": "Data Analytics & AI helps businesses convert raw data into insights using machine learning, predictive models, and real-time analytics. It powers decisions, automation, and personalized customer experiences.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/data-analytics-page/data.png",
-        "title": "Data Lakes & Warehousing",
-        "description": "Centralize structured and unstructured data for analytics at scale."
-      },
-      {
-        "icon": "/data-analytics-page/model.png",
-        "title": "Machine Learning & Model Training",
-        "description": "Develop predictive models to solve real-world business challenges."
-      },
-      {
-        "icon": "/data-analytics-page/predictive.png",
-        "title": "Predictive & Prescriptive Analytics",
-        "description": "Anticipate trends and recommend actions using advanced analytics."
-      },
-      {
-        "icon": "/data-analytics-page/ai.png",
-        "title": "AI Chatbots & NLP Applications",
-        "description": "Build conversational bots and intelligent assistants with NLP."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "Customer Behavior Prediction",
-        "description": "A retail chain uses machine learning to identify customer preferences and predict purchases. This informs personalized campaigns and boosts sales."
-      },
-      {
-        "title": "Real-Time Fraud Detection",
-        "description": "A digital bank uses AI to monitor transactions in real-time. Suspicious patterns are flagged instantly, and automated workflows freeze accounts to prevent fraud."
-      },
-      {
-        "title": "Operational Dashboards",
-        "description": "A logistics firm aggregates GPS and IoT data into dashboards for real-time fleet tracking, improving delivery performance and route efficiency."
-      },
-      {
-        "title": "AI Chatbot for Support",
-        "description": "A tech platform deploys an NLP-powered chatbot for 24/7 customer support, handling 60% of queries and reducing ticket resolution time significantly."
-      }
-    ],
-    "seo": {
-      "title": "Data Analytics & AI Services - Orotecc",
-      "description": "Unlock insights and drive smarter decisions with Orotecc's data analytics and AI solutions."
-    }
-  },
-  "DevOpsAutomation": {
-    "heroTitle": "DevOps & Automation",
-    "heroSubtitle": "Streamlined workflows and faster delivery through smart automation",
-    "bannerAlt": "DevOps & Automation Banner",
-    "whatIsTitle": "What is DevOps & Automation?",
-    "whatIsDesc": "DevOps integrates software development and IT operations, emphasizing automation, collaboration, and continuous delivery. By automating code integration, testing, and deployment, teams release faster with fewer errors.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/devops-automation-page/pipeline.png",
-        "title": "CI/CD Pipeline Implementation",
-        "description": "Enable faster, reliable releases through continuous integration and delivery."
-      },
-      {
-        "icon": "/devops-automation-page/infrastructure.png",
-        "title": "Infrastructure Automation",
-        "description": "Manage infrastructure at scale with declarative automation tools."
-      },
-      {
-        "icon": "/devops-automation-page/monitoring.png",
-        "title": "Monitoring & Alerting",
-        "description": "Track system health and respond quickly with real-time insights."
-      },
-      {
-        "icon": "/devops-automation-page/container.png",
-        "title": "Container Orchestration",
-        "description": "Package and manage applications across environments seamlessly."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "CI/CD For FinTech App",
-        "description": "A FinTech startup uses GitHub Actions and Docker containers to build, test, and deploy updates multiple times a day, reducing release cycles from weeks to hours."
-      },
-      {
-        "title": "Infrastructure Automation for Agencies",
-        "description": "A digital agency automates infrastructure setup for multiple clients using Terraform and Ansible, eliminating manual errors and reducing provisioning time by 80%."
-      },
-      {
-        "title": "Blue/Green Deployments",
-        "description": "A telecom company implements blue/green deployment to release new versions with zero downtime and instant rollback options in case of issues."
-      },
-      {
-        "title": "Automated Testing & QA",
-        "description": "A gaming company integrates automated testing in its CI pipeline. Every code change triggers end-to-end tests, cutting QA overhead and improving release confidence."
-      }
-    ],
-    "seo": {
-      "title": "DevOps & Automation Services - Orotecc",
-      "description": "Streamline your development and deployment with Orotecc's DevOps and automation services."
-    }
-  },
-  "ManagedCloud": {
-    "heroTitle": "Managed Cloud",
-    "heroSubtitle": "Reliable cloud operations — monitored, maintained, and supported",
-    "bannerAlt": "Managed Cloud Banner",
-    "whatIsTitle": "What is Managed Cloud?",
-    "whatIsDesc": "Managed cloud services provide full operational support for your cloud infrastructure, including monitoring, updates, backups, and cost optimization, so your team can focus on innovation.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/managed-cloud-page/cloud.png",
-        "title": "24/7 Cloud Monitoring & Alerts",
-        "description": "Proactive system monitoring with instant alerts and resolution."
-      },
-      {
-        "icon": "/managed-cloud-page/security.png",
-        "title": "Security Updates & Patch Management",
-        "description": "Keep systems secure and up-to-date automatically."
-      },
-      {
-        "icon": "/managed-cloud-page/performance.png",
-        "title": "Performance Optimization",
-        "description": "Fine-tune cloud environments for speed, efficiency, and reliability."
-      },
-      {
-        "icon": "/managed-cloud-page/recovery.png",
-        "title": "Disaster Recovery Management",
-        "description": "Ensure business continuity with backup and failover solutions."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "24/7 Monitoring for SaaS App",
-        "description": "A SaaS company offloads monitoring and incident response to a managed provider, ensuring fast issue resolution and 99.99% uptime."
-      },
-      {
-        "title": "MSP Support for Multi-Cloud Environments",
-        "description": "An enterprise spans AWS and Azure. A managed provider handles health checks, logging, and cross-platform policy enforcement."
-      },
-      {
-        "title": "Monthly Cost Reporting & Governance",
-        "description": "A nonprofit receives monthly usage analytics and cost reports, helping them stay within grant budgets while maintaining performance."
-      },
-      {
-        "title": "Proactive Maintenance & Scaling",
-        "description": "An EdTech platform experiences seasonal spikes. The managed cloud team proactively scales resources and pre-tunes performance for traffic surges."
-      }
-    ],
-    "seo": {
-      "title": "Managed Cloud Services - Orotecc",
-      "description": "24/7 managed cloud operations, monitoring, and support from Orotecc."
-    }
-  },
-  "MultiCloudSolutions": {
-    "heroTitle": "Multi-Cloud Solutions",
-    "heroSubtitle": "Smart strategies for resilient, flexible cloud deployments",
-    "bannerAlt": "Multi-Cloud Solutions Banner",
-    "whatIsTitle": "What is Multi-Cloud Solutions?",
-    "whatIsDesc": "Multi-cloud refers to using services from multiple cloud providers to increase reliability, avoid vendor lock-in, and ensure compliance. We help architect, deploy, and manage integrated multi-cloud environments.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/multi-cloud/cross.png",
-        "title": "Cross-Cloud Strategy & Integration",
-        "description": "Architect solutions that leverage multiple cloud providers effectively."
-      },
-      {
-        "icon": "/multi-cloud/data.png",
-        "title": "Data Synchronization Across Clouds",
-        "description": "Keep data consistent across AWS, Azure, GCP, and others."
-      },
-      {
-        "icon": "/multi-cloud/compliance.png",
-        "title": "Compliance-Driven Deployments",
-        "description": "Align cloud usage with local laws and industry regulations."
-      },
-      {
-        "icon": "/multi-cloud/recovery.png",
-        "title": "Disaster Recovery & Failover",
-        "description": "Ensure resilience with cloud-to-cloud replication and failover."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "Avoiding Vendor Lock-in",
-        "description": "A tech firm runs front-end services on AWS while hosting analytics on GCP, gaining flexibility and leveraging the strengths of each provider."
-      },
-      {
-        "title": "Compliance-Driven Strategy",
-        "description": "A multinational corporation stores customer data on region-specific clouds (Azure in the EU, AWS in the US) to meet data residency laws."
-      },
-      {
-        "title": "Cross-Cloud Data Syncing",
-        "description": "A fintech startup syncs customer data between GCP (analytics) and AWS (app logic) to optimize both cost and performance."
-      },
-      {
-        "title": "High Availability Architecture",
-        "description": "A media company uses Azure and AWS in parallel, with auto-failover systems ensuring zero downtime even if one provider goes down."
-      }
-    ],
-    "seo": {
-      "title": "Multi-Cloud Solutions - Orotecc",
-      "description": "Flexible, resilient multi-cloud strategies and integration from Orotecc."
-    }
-  },
-  "CloudApps": {
-    "heroTitle": "Cloud Apps",
-    "heroSubtitle": "Purpose-built applications designed for speed, scale, and performance",
-    "bannerAlt": "Cloud Apps Banner",
-    "whatIsTitle": "What is Cloud Apps?",
-    "whatIsDesc": "Cloud apps are built for the cloud from day one. They're scalable, secure, and accessible from anywhere. We develop custom cloud-native apps tailored to business goals, powered by APIs, microservices, and modern UX.",
-    "keyComponentsTitle": "Key Service Components",
-    "keyComponents": [
-      {
-        "icon": "/cloud-app-page/cloud-native.png",
-        "title": "Cloud-Native App Development",
-        "description": "Build robust applications optimized for cloud performance."
-      },
-      {
-        "icon": "/cloud-app-page/saas.png",
-        "title": "SaaS Product Engineering",
-        "description": "Develop scalable, subscription-based software platforms."
-      },
-      {
-        "icon": "/cloud-app-page/microservices.png",
-        "title": "Microservices Architecture",
-        "description": "Create flexible, decoupled services for modern app delivery."
-      },
-      {
-        "icon": "/cloud-app-page/api-design.png",
-        "title": "API Design & Integration",
-        "description": "Connect systems and services with secure, well-structured APIs."
-      }
-    ],
-    "useCasesTitle": "Use cases",
-    "useCases": [
-      {
-        "title": "Custom CRM on Cloud",
-        "description": "A B2B company replaces spreadsheets with a tailored CRM application, built on cloud-native architecture with real-time collaboration and mobile support."
-      },
-      {
-        "title": "SaaS Product Development",
-        "description": "A startup launches a cloud-based task management app with subscription billing, multi-user access, and seamless scalability."
-      },
-      {
-        "title": "Internal Business Tools",
-        "description": "A manufacturing company digitizes production tracking and team coordination via internal cloud apps integrated with their ERP."
-      },
-      {
-        "title": "Hybrid App Backend",
-        "description": "A company building a mobile platform hosts the backend in the cloud using Firebase and custom APIs, enabling real-time user sync and fast content delivery."
-      }
-    ],
-    "seo": {
-      "title": "Cloud Apps & SaaS Solutions - Orotecc",
-      "description": "Custom cloud applications and SaaS solutions for performance and scalability."
     }
   },
   "FreeConsultation": {

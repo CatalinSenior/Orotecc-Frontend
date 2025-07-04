@@ -6,8 +6,6 @@ import { useForm } from "react-hook-form";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
-// Type definitions for form data
-
 type SignUpFormData = {
   email: string;
   accountName: string;
@@ -17,7 +15,6 @@ type VerificationFormData = {
   verificationCode: string;
 };
 
-// Static Slider Component (no animation)
 const slideData = [
   {
     id: 3,
@@ -201,28 +198,26 @@ const SignUp = () => {
             className="w-full max-w-[520px] py-16 flex flex-col gap-5"
           >
             <h1 className="font-semibold text-[#3b3f48] text-lg sm:text-lg lg:text-2xl tracking-[0] ">
-              Sign up for Orotecc
+              {t('signUpForOrotecc')}
             </h1>
             <h3 className="text-lg font-semibold ">
-              Confirm that it&apos;s you
+              {t('confirmIdentity')}
             </h3>
             <p className="text-sm text-[#686e7b]">
-              Making sure you are secure - it&apos;s what we do.
+              {t('securityMessage')}
             </p>
             <p className="text-sm text-[#686e7b] mb-2">
-              We sent an email with a verification code to{" "}
-              <span className="font-semibold text-[#222]">{userEmail}</span>{" "}
-              (not you?).
+              {t('sentEmailWithCode')} <span className="font-semibold text-[#222]">{userEmail}</span> {t('notYou')}
             </p>
             <p className="text-sm text-[#686e7b] mb-4">
-              Enter it below to confirm your email.
+              {t('enterCodeToConfirm')}
             </p>
 
             <div className="flex flex-col gap-6">
               {/* Verification Code field */}
               <div>
                 <label className="block text-base font-semibold  mb-1">
-                  Verification Code
+                  {t('verificationCodeLabel')}
                 </label>
                 <input
                   type="text"
@@ -233,7 +228,7 @@ const SignUp = () => {
                       ? "border-red-500"
                       : "border-[#e0e0e0]"
                   } rounded-lg text-base  focus:outline-none focus:border-[#6a4cff]`}
-                  placeholder="Enter 6-digit code"
+                  placeholder={t('verificationCodePlaceholder')}
                 />
                 {verificationErrors.verificationCode && (
                   <p className="text-red-500 text-sm mt-1">
@@ -247,7 +242,7 @@ const SignUp = () => {
               type="submit"
               className="w-full py-3 bg-[#6a4cff] text-white rounded-3xl text-base font-semibold cursor-pointer mt-2 hover:bg-[#5739d6] transition"
             >
-              Verify
+              {t('verify')}
             </button>
 
             <button
@@ -255,14 +250,14 @@ const SignUp = () => {
               onClick={handleResendCode}
               className="w-full py-3 bg-white text-[#6a4cff] border border-[#6a4cff] rounded-3xl text-base font-semibold cursor-pointer hover:bg-[#f6f6fa] transition"
             >
-              Resend Code
+              {t('resendCode')}
             </button>
 
             <div className="text-sm text-[#686e7b] mt-4">
-              <p className="font-semibold mb-1">Didn&apos;t get the code?</p>
+              <p className="font-semibold mb-1">{t('didntGetCode')}</p>
               <ul className="list-disc list-inside">
-                <li>Codes can take up to 5 minutes to arrive.</li>
-                <li>Check your spam folder.</li>
+                <li>{t('codesCanTakeTime')}</li>
+                <li>{t('checkSpam')}</li>
               </ul>
             </div>
           </form>

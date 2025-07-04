@@ -7,7 +7,7 @@ type Step1SetPasswordProps = {
 };
 
 const Step1SetPassword = ({ onNext, onSignIn }: Step1SetPasswordProps) => {
-  const t = useTranslations('CompleteSignup.Step1SetPassword');
+  const t = useTranslations('Auth.CompleteSignup.Step1SetPassword');
   return (
     <form
       className="w-full max-w-[520px] p-10 flex flex-col gap-5 rounded-xl"

@@ -46,7 +46,6 @@ const SignIn = () => {
   } = useForm();
 
   const onSubmit = () => {
-    // Handle sign in logic here
     router.push("/dashboard");
   };
 

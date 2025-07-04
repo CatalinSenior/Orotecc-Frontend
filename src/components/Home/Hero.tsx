@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         className="object- object-center z-0"
         priority
       />
-      <Container className="relative z-10 flex flex-col lg:flex-row items-center lg:items-stretch mt-12 md:mt-24 lg:mt-36 justify-center min-h-[calc(100vh)] lg:min-h-[calc(100vh+150px) py-12 md:py-0 gap-6">
+      <Container className="relative z-10 flex flex-col lg:flex-row items-center lg:items-stretch mt-12 md:mt-24 lg:mt-36 justify-center min-h-[calc(100vh)] lg:min-h-[calc(100vh+150px) py-12 md:py-0 gap-6" style={{ direction: 'ltr' }}>
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col items-start text-cente 2xl:pt-12">
           <h1 className="text-4xl lg:text-[46px] xl:text-[54px] font-semibold text-white mb-6 leading-tight">

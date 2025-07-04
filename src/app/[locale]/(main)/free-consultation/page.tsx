@@ -57,7 +57,7 @@ function FreeConsultationPage() {
   ];
 
   return (
-    <main>
+    <main className="..." style={{ direction: 'ltr' }}>
       <Hero
         title={t('heroTitle')}
         subtitle={t('heroSubtitle')}

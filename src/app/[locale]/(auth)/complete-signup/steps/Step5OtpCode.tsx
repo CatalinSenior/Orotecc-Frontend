@@ -8,7 +8,7 @@ type Step5OtpCodeProps = {
 };
 
 const Step5OtpCode = ({ onNext, onResendCode, phoneNumber }: Step5OtpCodeProps) => {
-  const t = useTranslations('CompleteSignup.Step5OtpCode');
+  const t = useTranslations('Auth.CompleteSignup.Step5OtpCode');
   const inputsRef = useRef<Array<HTMLInputElement | null>>([]);
   const [otp, setOtp] = React.useState(Array(6).fill(""));
 
@@ -17,10 +17,6 @@ const Step5OtpCode = ({ onNext, onResendCode, phoneNumber }: Step5OtpCodeProps) 
     const newOtp = [...otp];
     newOtp[idx] = value;
     setOtp(newOtp);
-    // Move to next input if value entered
-    if (value && idx < 5) {
-      inputsRef.current[idx + 1]?.focus();
-    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, idx: number) => {

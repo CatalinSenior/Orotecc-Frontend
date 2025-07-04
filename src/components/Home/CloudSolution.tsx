@@ -38,7 +38,7 @@ const Cloud = () => {
           sizes="100vw"
         />
       </div>
-      <Container className="relative z-10">
+      <Container className="relative z-10" style={{ direction: 'ltr' }}>
         <div className="text-center mb-6">
           <h2 className="text-[#764af1] text-base sm:text-xl font-bold tracking-[1.60px] mb-2 sm:mb-4 uppercase">
             {t('title')}

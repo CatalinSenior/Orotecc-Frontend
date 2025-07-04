@@ -17,7 +17,7 @@ const Schedule = () => {
             sizes="100vw"
             />
         </div>
-    <Container className="w-full  flex items-center justify-center py-10 md:py-0 mt-12 lg:mt-24">
+    <Container className="w-full  flex items-center justify-center py-10 md:py-0 mt-12 lg:mt-24" style={{ direction: 'ltr' }}>
     <div className="relative z-10 w-full px-4 sm:px-6 py-10  rounded-[12px] [background:linear-gradient(135deg,rgba(118,74,241,1)_0%,rgba(68,0,198,1)_100%)] flex flex-col items-center text-center">
       <div className="flex flex-col items-center gap-5 w-full max-w-3xl">
         <div className="flex flex-col items-center gap-2 w-full">

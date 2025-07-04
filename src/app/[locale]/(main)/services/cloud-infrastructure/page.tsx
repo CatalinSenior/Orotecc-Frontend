@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
 export default function CloudInfrastructurePage() {
-  const t = useTranslations('Services.CloudInfrastructure');
+  const t = useTranslations('Services.cloudInfrastructure');
   return (
-    <main className="w-full ">
+    <main className="w-full " style={{ direction: 'ltr' }}>
       <Hero
         title={t('heroTitle')}
         subtitle={t('heroSubtitle')}

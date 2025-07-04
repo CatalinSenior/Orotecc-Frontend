@@ -24,7 +24,7 @@ type Step2ContactInformationProps = {
 };
 
 const Step2ContactInformation = ({ onNext, onPrevious }: Step2ContactInformationProps) => {
-  const t = useTranslations('CompleteSignup.Step2ContactInformation');
+  const t = useTranslations('Auth.CompleteSignup.Step2ContactInformation');
   const { register, handleSubmit, setValue, watch } = useForm();
   const [agree, setAgree] = React.useState(false);
   const [selectedCountry, setSelectedCountry] = React.useState(countryOptions[0]);

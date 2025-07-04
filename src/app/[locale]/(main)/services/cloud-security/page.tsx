@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 export default function CloudSecurityPage() {
   const t = useTranslations('Services.CloudSecurity');
   return (
-    <main className="w-full ">
+    <main className="w-full " style={{ direction: 'ltr' }}>
       <Hero
         title={t('heroTitle')}
         subtitle={t('heroSubtitle')}
