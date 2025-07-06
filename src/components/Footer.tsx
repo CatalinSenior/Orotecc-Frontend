@@ -25,7 +25,7 @@ import { useTranslations } from 'next-intl';
     const footerLinks: FooterLinks = {
       company: [tCommon('home'), tFooter('about'), tFooter('contact')],
       services: [
-        tServices('cloudInfrastructure'),
+        tServices('cloudInfrastructureTitle'),
         tServices('cloudSecurity'),
         tServices('awsSolutions'),
         tServices('devOps'),
@@ -38,7 +38,7 @@ import { useTranslations } from 'next-intl';
     };
     
     const serviceLinkMap: { [key: string]: string } = {
-      [tServices('cloudInfrastructure')]: "/services/cloud-infrastructure",
+      [tServices('cloudInfrastructureTitle')]: "/services/cloud-infrastructure",
       [tServices('cloudSecurity')]: "/services/cloud-security",
       [tServices('awsSolutions')]: "/services/aws-solutions",
       [tServices('devOps')]: "/services/devops-automation",

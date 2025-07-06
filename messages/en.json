@@ -307,6 +307,7 @@
   "Services": {
     "title": "Our Services",
     "subtitle": "Comprehensive cloud solutions for your business",
+    "cloudInfrastructureTitle": "Cloud Infrastructure",
     "cloudInfrastructureDesc": "Scalable and secure cloud infrastructure solutions",
     "cloudSecurity": "Cloud Security",
     "cloudSecurityDesc": "Advanced security solutions to protect your data",

@@ -44,44 +44,44 @@ const About = () => {
     },
   ];
 
-  const teamMembers = [
-    {
-      name: "Ahmed Milhem",
-      role: t('ceo'),
-      imageSrc: "/team/ahmed.png",
-      description: t('ahmedDesc'),
-    },
-    {
-      name: "John Doe",
-      role: t('executiveDirector'),
-      imageSrc: "/team/john.png",
-      description: t('johnDesc'),
-    },
-    {
-      name: "Jane Doe",
-      role: t('director'),
-      imageSrc: "/team/jane.png",
-      description: t('janeDesc'),
-    },
-    {
-      name: "Irfan Sheikh",
-      role: t('marketing'),
-      imageSrc: "/team/irfan.png",
-      description: t('irfanDesc'),
-    },
-    {
-      name: "Rashid Sen",
-      role: t('awsManager'),
-      imageSrc: "/team/rashid.png",
-      description: t('rashidDesc'),
-    },
-    {
-      name: "Arifa",
-      role: t('cloudHead'),
-      imageSrc: "/team/arifa.png",
-      description: t('arifaDesc'),
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Ahmed Milhem",
+  //     role: t('ceo'),
+  //     imageSrc: "/team/ahmed.png",
+  //     description: t('ahmedDesc'),
+  //   },
+  //   {
+  //     name: "John Doe",
+  //     role: t('executiveDirector'),
+  //     imageSrc: "/team/john.png",
+  //     description: t('johnDesc'),
+  //   },
+  //   {
+  //     name: "Jane Doe",
+  //     role: t('director'),
+  //     imageSrc: "/team/jane.png",
+  //     description: t('janeDesc'),
+  //   },
+  //   {
+  //     name: "Irfan Sheikh",
+  //     role: t('marketing'),
+  //     imageSrc: "/team/irfan.png",
+  //     description: t('irfanDesc'),
+  //   },
+  //   {
+  //     name: "Rashid Sen",
+  //     role: t('awsManager'),
+  //     imageSrc: "/team/rashid.png",
+  //     description: t('rashidDesc'),
+  //   },
+  //   {
+  //     name: "Arifa",
+  //     role: t('cloudHead'),
+  //     imageSrc: "/team/arifa.png",
+  //     description: t('arifaDesc'),
+  //   },
+  // ];
 
   return (
     <main className=" w-full">
@@ -94,7 +94,7 @@ const About = () => {
       />
       <WhoWeAre />
       <WhyChooseUs whyChooseUsData={whyChooseUsData} />
-      <MeetOurTeam teamMembers={teamMembers} />
+      <MeetOurTeam />
       <Testimonial />
     </main>
   );
