@@ -5,7 +5,7 @@ export async function createAwsPartner(data: CreateAwsPartnerData): Promise<ApiR
 }
 
 export async function getAllAwsPartners(): Promise<ApiResponse<AwsPartner[]>> {
-  return apiGet<ApiResponse<AwsPartner[]>>('/api/aws-partners');
+  return apiGet<ApiResponse<AwsPartner[]>>('/api/aws-partners?mock=true');
 }
 
 export async function getAwsPartnerById(id: string): Promise<ApiResponse<AwsPartner>> {

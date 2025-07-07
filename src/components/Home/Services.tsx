@@ -16,57 +16,6 @@ const Services = () => {
     queryFn: getAllServices,
   });
 
-  // const serviceCards = [
-  //   {
-  //     title: t('cloudInfrastructureTitle'),
-  //     description: t('cloudInfrastructureDesc'),
-  //     iconBg: "bg-[#b696fe]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-3.svg",
-  //   },
-  //   {
-  //     title: t('cloudSecurity'),
-  //     description: t('cloudSecurityDesc'),
-  //     iconBg: "bg-[#00a2cd]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-4.svg",
-  //   },
-  //   {
-  //     title: t('awsSolutions'),
-  //     description: t('awsSolutionsDesc'),
-  //     iconBg: "bg-[#252f3e]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-2.svg",
-  //   },
-  //   {
-  //     title: t('devOps'),
-  //     description: t('devOpsDesc'),
-  //     iconBg: "bg-[#4ad540]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-7.svg",
-  //   },
-  //   {
-  //     title: t('managedCloud'),
-  //     description: t('managedCloudDesc'),
-  //     iconBg: "bg-[#4ad540]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-7.svg",
-  //   },
-  //   {
-  //     title: t('multiCloud'),
-  //     description: t('multiCloudDesc'),
-  //     iconBg: "bg-[#4ad540]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-7.svg",
-  //   },
-  //   {
-  //     title: t('dataAnalytics'),
-  //     description: t('dataAnalyticsDesc'),
-  //     iconBg: "bg-[#4ad540]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-7.svg",
-  //   },
-  //   {
-  //     title: t('cloudApps'),
-  //     description: t('cloudAppsDesc'),
-  //     iconBg: "bg-[#b696fe]",
-  //     iconSrc: "https://c.animaapp.com/mbw3crr3UaRZYv/img/nav-icons-3.svg",
-  //   },
-  // ];
-
   const FlippingIcon = ({ hovered }: { hovered: boolean }) => (
     <span className="relative w-6 h-6 flex items-center justify-center" style={{ perspective: 200 }}>
       <motion.span

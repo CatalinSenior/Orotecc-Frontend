@@ -5,7 +5,7 @@ export async function createService(data: CreateServiceData): Promise<ApiRespons
 }
 
 export async function getAllServices(): Promise<ApiResponse<Service[]>> {
-  return apiGet<ApiResponse<Service[]>>('/api/services');
+  return apiGet<ApiResponse<Service[]>>('/api/services?mock=true');
 }
 
 export async function getServiceById(id: string): Promise<ApiResponse<Service>> {

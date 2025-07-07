@@ -5,7 +5,7 @@ export async function createProfessional(data: CreateProfessionalData): Promise<
 }
 
 export async function getAllProfessionals(): Promise<ApiResponse<Professional[]>> {
-  return apiGet<ApiResponse<Professional[]>>('/api/professionals');
+  return apiGet<ApiResponse<Professional[]>>('/api/professionals?mock=true');
 }
 
 export async function getProfessionalById(id: string): Promise<ApiResponse<Professional>> {
