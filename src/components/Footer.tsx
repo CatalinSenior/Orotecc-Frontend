@@ -5,6 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations } from 'next-intl';
+
+interface FooterProps {
+  schedule?: boolean;
+}
   
   // Footer links data
   interface FooterLinks {
@@ -14,7 +18,7 @@ import { useTranslations } from 'next-intl';
     resources: string[];
   }
   
-  export const Footer = () => {
+  export const Footer = ({ schedule = true }: FooterProps  ) => {
     const pathname = usePathname();
     const tCommon = useTranslations('Common');
     const tFooter = useTranslations('Footer');
@@ -62,7 +66,7 @@ import { useTranslations } from 'next-intl';
 
     return (
       <div className="relative overflow-hidden">
-        {pathname !== "/free-consultation" && <Schedule />}
+        {schedule && pathname !== "/free-consultation" && <Schedule />}
 
         <footer className="w-full bg-[#121d4e] relative pt-[4rem]  lg:pt-[8rem]">
           <Container className="">

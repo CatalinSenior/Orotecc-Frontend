@@ -162,6 +162,11 @@
       }
     }
   },
+  "NotFound": {
+    "title": "Page not found.",
+    "description": "Sorry, but the page you are trying to access doesn't exist or has been moved. Try going back to our homepage.",
+    "returnHome": "Return to Homepage"
+  },
   "Home": {
     "heroTitle": "Transform Your Business with Cloud Solutions",
     "heroSubtitle": "Empowering enterprises with cutting-edge cloud infrastructure and digital transformation services",
